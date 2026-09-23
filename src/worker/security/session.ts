@@ -1,4 +1,4 @@
-export interface SecurityEnvironment { SESSION_SIGNING_SECRET?: string; AUTHOR_EMAIL?: string; LOCAL_DEVELOPMENT?: string; }
+export interface SecurityEnvironment { SESSION_SIGNING_SECRET?: string; AUTHOR_EMAIL?: string; AUTHOR_EMAILS?: string; LOCAL_DEVELOPMENT?: string; }
 export interface Session { id: string; subject: string; issuedAt: number; expiresAt: number; }
 export class SecurityError extends Error {
   constructor(public readonly errorCode: string, public readonly status: number, message: string) { super(message); this.name = 'SecurityError'; }
@@ -29,9 +29,10 @@ export async function verifyPayload(token: string, env: SecurityEnvironment): Pr
 export function authorIdentity(request: Request, env: SecurityEnvironment): string {
   const url = new URL(request.url);
   if (env.LOCAL_DEVELOPMENT === 'true' && ['localhost','127.0.0.1'].includes(url.hostname)) return 'local-author';
-  if (!env.AUTHOR_EMAIL) throw new SecurityError('author_config_missing',503,'An author account must be configured before editing.');
+  const allowed = (env.AUTHOR_EMAILS || env.AUTHOR_EMAIL || '').split(',').map(value => value.trim().toLowerCase()).filter(Boolean);
+  if (!allowed.length) throw new SecurityError('author_config_missing',503,'An author account must be configured before editing.');
   const identity = request.headers.get('oai-authenticated-user-email');
-  if (!identity || identity.toLowerCase() !== env.AUTHOR_EMAIL.toLowerCase()) throw new SecurityError('unauthenticated',401,'Sign in with the configured author account.');
+  if (!identity || !allowed.includes(identity.toLowerCase())) throw new SecurityError('unauthenticated',401,'Sign in with an approved author account to open your workspace.');
   return identity.toLowerCase();
 }
 export async function createSessionCookie(env: SecurityEnvironment, subject: string, issuedAt = Date.now(), sessionId: string = crypto.randomUUID()) {

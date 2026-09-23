@@ -3,6 +3,14 @@ import { expect, it } from 'vitest';
 import worker from '../../src/worker';
 import { context } from '../fixtures/runtime-env';
 import { securityEnv, authorHeaders } from '../fixtures/security/session-fixtures';
+it('allows explicitly approved accounts while blocking anonymous and other visitors', async () => {
+  const env = { ...securityEnv,AUTHOR_EMAILS: 'owner@example.test,second@example.test' };
+  for (const [email,status] of [['owner@example.test',200],['second@example.test',200],['stranger@example.test',401],['',401]] as const) {
+    const response = await worker.fetch(new Request('https://reframe.test/api/session',{ headers: { 'oai-authenticated-user-email': email } }),env,context);
+    expect(response.status,email).toBe(status);
+    if (status === 401) expect(response.headers.get('Set-Cookie')).toBeNull();
+  }
+});
 it('guards project requests before handlers and issues an owner-only secure session', async () => {
   const call = (path: string, method = 'GET', headers = {}) => worker.fetch(new Request(`https://reframe.test${path}`,{ method, headers: { ...authorHeaders,...headers } }),securityEnv,context);
   expect((await call('/api/projects','POST')).status).toBe(401);

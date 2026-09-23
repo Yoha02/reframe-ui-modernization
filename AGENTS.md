@@ -15,3 +15,5 @@ Implement this application through its Forge work orders. Product requirements a
 - Prove one complete Home page journey first; target Home, The Lineup, and Jam Central. A compatibility error or ZIP alone does not satisfy the required public working release.
 - Do not add beta recruitment, invitation administration, analytics programs, monitoring dashboards, multi-week plans, or unrelated enterprise features.
 - Test meaningful approval, preservation, persistence, import-boundary and publishing behavior. Report untested integrations and missing credentials honestly.
+
+- Updated user authorization: make the workbench Site publicly reachable and allow both asggm02@gmail.com and asggm03@gmail.com to sign in for authoring. Anonymous visitors may see the landing page, but project data, edits, and model calls remain authenticated and allowlisted. This supersedes the earlier owner-private platform audience.
