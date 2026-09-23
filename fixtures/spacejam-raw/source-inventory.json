@@ -1,0 +1,147 @@
+{
+  "collected_at": "2026-09-23T20:50:21.1092858Z",
+  "status": "raw_evidence_incomplete",
+  "pages": [
+    {
+      "title": "Home",
+      "source_url": "https://www.spacejam.com/1996/",
+      "frame_wrapper_url": null,
+      "source_file": "spacejam-home/source.html",
+      "source_sha256": "394e8cd99deeb934480f86abb0fbc36a58a5344873777f1affe9c27334b80a13",
+      "assets": [
+        {
+          "source_url": "https://www.spacejam.com/1996/img/p-pressbox.gif",
+          "original_name": "p-pressbox.gif",
+          "file": "spacejam-home/assets/ff654c5ac6d70aed.gif",
+          "content_type": "image/gif"
+        },
+        {
+          "source_url": "https://www.spacejam.com/1996/img/p-jamcentral.gif",
+          "original_name": "p-jamcentral.gif",
+          "file": "spacejam-home/assets/86e7745bdfac2e9a.gif",
+          "content_type": "image/gif"
+        },
+        {
+          "source_url": "https://www.spacejam.com/1996/img/p-jamlogo.gif",
+          "original_name": "p-jamlogo.gif",
+          "file": "spacejam-home/assets/0fcdbe75d864890b.gif",
+          "content_type": "image/gif"
+        },
+        {
+          "source_url": "https://www.spacejam.com/1996/img/p-bball.gif",
+          "original_name": "p-bball.gif",
+          "file": "spacejam-home/assets/2c217be88b2cc93d.gif",
+          "content_type": "image/gif"
+        },
+        {
+          "source_url": "https://www.spacejam.com/1996/img/p-lunartunes.gif",
+          "original_name": "p-lunartunes.gif",
+          "file": "spacejam-home/assets/2a1f049932516cef.gif",
+          "content_type": "image/gif"
+        },
+        {
+          "source_url": "https://www.spacejam.com/1996/img/p-lineup.gif",
+          "original_name": "p-lineup.gif",
+          "file": "spacejam-home/assets/8c52c57fee83ca58.gif",
+          "content_type": "image/gif"
+        },
+        {
+          "source_url": "https://www.spacejam.com/1996/img/p-jump.gif",
+          "original_name": "p-jump.gif",
+          "file": "spacejam-home/assets/8031384b386295b1.gif",
+          "content_type": "image/gif"
+        },
+        {
+          "source_url": "https://www.spacejam.com/1996/img/p-junior.gif",
+          "original_name": "p-junior.gif",
+          "file": "spacejam-home/assets/9e25416b11e70701.gif",
+          "content_type": "image/gif"
+        },
+        {
+          "source_url": "https://www.spacejam.com/1996/img/p-studiostore.gif",
+          "original_name": "p-studiostore.gif",
+          "file": "spacejam-home/assets/619cc5749a5e07fc.gif",
+          "content_type": "image/gif"
+        },
+        {
+          "source_url": "https://www.spacejam.com/1996/img/p-souvenirs.gif",
+          "original_name": "p-souvenirs.gif",
+          "file": "spacejam-home/assets/40f2368124066589.gif",
+          "content_type": "image/gif"
+        },
+        {
+          "source_url": "https://www.spacejam.com/1996/img/p-sitemap.gif",
+          "original_name": "p-sitemap.gif",
+          "file": "spacejam-home/assets/2c042f78a5f75e1a.gif",
+          "content_type": "image/gif"
+        },
+        {
+          "source_url": "https://www.spacejam.com/1996/img/p-behind.gif",
+          "original_name": "p-behind.gif",
+          "file": "spacejam-home/assets/35b7d1274f430ab0.gif",
+          "content_type": "image/gif"
+        },
+        {
+          "source_url": "https://www.spacejam.com/1996/css/wbPolicyUpdatedNoticeStyle.css",
+          "original_name": "wbPolicyUpdatedNoticeStyle.css",
+          "file": "spacejam-home/assets/de19cb1baa7860ca.css",
+          "content_type": "text/css"
+        }
+      ],
+      "screenshot_file": null,
+      "capture_note": "Original assets and HTML collected; screenshot export and application-specific bundle validation remain pending."
+    },
+    {
+      "title": "The Lineup",
+      "source_url": "https://www.spacejam.com/1996/cmp/lineup/lineup.html",
+      "frame_wrapper_url": "https://www.spacejam.com/1996/cmp/lineup/lineupframes.html",
+      "source_file": "spacejam-lineup/source.html",
+      "source_sha256": "107e737334eeaf9225859bf1d8c1d548d0f6575a2e7c094f327aa6c42247ddea",
+      "assets": [
+        {
+          "source_url": "https://www.spacejam.com/1996/cmp/lineup/img/m-lineup.jpg",
+          "original_name": "m-lineup.jpg",
+          "file": "spacejam-lineup/assets/0dd456f76b72e7fe.jpg",
+          "content_type": "image/jpeg"
+        },
+        {
+          "source_url": "https://www.spacejam.com/1996/cmp/lineup/img/n-games.gif",
+          "original_name": "n-games.gif",
+          "file": "spacejam-lineup/assets/bb7d4ac2ddc1a2a0.gif",
+          "content_type": "image/gif"
+        },
+        {
+          "source_url": "https://www.spacejam.com/1996/img/bg_stars.jpg",
+          "original_name": "bg_stars.jpg",
+          "file": "spacejam-lineup/assets/318b6eb37ec4efed.jpg",
+          "content_type": "image/jpeg"
+        }
+      ],
+      "screenshot_file": null,
+      "capture_note": "Original assets and HTML collected; screenshot export and application-specific bundle validation remain pending."
+    },
+    {
+      "title": "Jam Central",
+      "source_url": "https://www.spacejam.com/1996/cmp/jamcentral/jamcentral.html",
+      "frame_wrapper_url": "https://www.spacejam.com/1996/cmp/jamcentral/jamcentralframes.html",
+      "source_file": "spacejam-central/source.html",
+      "source_sha256": "333daa9dec02e6d378a201cae820e5b94b173441ac89523b242e40a6d2331a4f",
+      "assets": [
+        {
+          "source_url": "https://www.spacejam.com/1996/cmp/jamcentral/img/m-central.jpg",
+          "original_name": "m-central.jpg",
+          "file": "spacejam-central/assets/a890383070b04e69.jpg",
+          "content_type": "image/jpeg"
+        },
+        {
+          "source_url": "https://www.spacejam.com/1996/img/bg_stars.jpg",
+          "original_name": "bg_stars.jpg",
+          "file": "spacejam-central/assets/318b6eb37ec4efed.jpg",
+          "content_type": "image/jpeg"
+        }
+      ],
+      "screenshot_file": null,
+      "capture_note": "Original assets and HTML collected; screenshot export and application-specific bundle validation remain pending."
+    }
+  ]
+}

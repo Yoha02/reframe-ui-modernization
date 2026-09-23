@@ -1,0 +1,29 @@
+{
+  "assets": [
+    {
+      "contentType": "image/jpeg",
+      "id": "0dd456f76b72e7fe",
+      "kind": "image",
+      "name": "m-lineup.jpg",
+      "path": "C:\\Users\\asggm\\AppData\\Local\\Temp/browser-use/assets/c66eaefb-a7b7-4ba2-a58b-981f6d4bc3ca/0dd456f76b72e7fe.jpg",
+      "url": "https://www.spacejam.com/1996/cmp/lineup/img/m-lineup.jpg"
+    },
+    {
+      "contentType": "image/gif",
+      "id": "bb7d4ac2ddc1a2a0",
+      "kind": "image",
+      "name": "n-games.gif",
+      "path": "C:\\Users\\asggm\\AppData\\Local\\Temp/browser-use/assets/c66eaefb-a7b7-4ba2-a58b-981f6d4bc3ca/bb7d4ac2ddc1a2a0.gif",
+      "url": "https://www.spacejam.com/1996/cmp/lineup/img/n-games.gif"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "318b6eb37ec4efed",
+      "kind": "image",
+      "name": "bg_stars.jpg",
+      "path": "C:\\Users\\asggm\\AppData\\Local\\Temp/browser-use/assets/c66eaefb-a7b7-4ba2-a58b-981f6d4bc3ca/318b6eb37ec4efed.jpg",
+      "url": "https://www.spacejam.com/1996/img/bg_stars.jpg"
+    }
+  ],
+  "failures": []
+}
