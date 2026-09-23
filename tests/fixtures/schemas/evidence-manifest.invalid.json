@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "title": "Archive fixture",
+  "sourceUrl": "https://example.com/",
+  "provenance": {
+    "capturedAt": "2026-09-23T12:00:00Z",
+    "method": "uploaded_evidence",
+    "tool": "contract-test"
+  },
+  "assets": []
+}

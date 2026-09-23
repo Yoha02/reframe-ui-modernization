@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "releaseId": "release-1",
+  "projectId": "project-1",
+  "designSystemVersionId": "ds-1",
+  "immutable": true,
+  "createdAt": "2026-09-23T12:00:00Z",
+  "routes": [
+    {
+      "pageId": "home",
+      "route": "/",
+      "artifactKey": "releases/release-1/index.html",
+      "approvalId": "approval-1"
+    }
+  ],
+  "artifacts": [
+    {
+      "objectKey": "releases/release-1/index.html",
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "mediaType": "text/html",
+      "byteSize": 100,
+      "immutable": true,
+      "kind": "html"
+    },
+    {
+      "objectKey": "releases/release-1/site.zip",
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "mediaType": "application/zip",
+      "byteSize": 100,
+      "immutable": true,
+      "kind": "zip"
+    }
+  ],
+  "hashes": {
+    "releases/release-1/index.html": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "releases/release-1/site.zip": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "zipArtifactKey": "releases/release-1/site.zip",
+  "publicState": "pending"
+}

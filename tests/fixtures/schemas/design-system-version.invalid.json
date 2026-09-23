@@ -1,0 +1,56 @@
+{
+  "id": "ds-1",
+  "projectId": "project-1",
+  "version": 1,
+  "name": "Quiet archive",
+  "status": "approved",
+  "immutable": true,
+  "sourceFingerprint": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "tokens": {
+    "colors": {
+      "background": "#f5f4f0",
+      "surface": "#ffffff",
+      "text": "#252735",
+      "muted": "#696b75",
+      "primary": "#6255d9",
+      "accent": "#a16e24",
+      "border": "#e7e6e1"
+    },
+    "typography": {
+      "headingFont": "Manrope",
+      "bodyFont": "DM Sans",
+      "baseSize": 16,
+      "headingScale": 1.25
+    },
+    "spacing": [
+      4,
+      8,
+      16,
+      24,
+      32,
+      48
+    ],
+    "radius": 12,
+    "maxWidth": 1200
+  },
+  "componentStyles": [
+    {
+      "name": "navigation",
+      "recipe": "quiet",
+      "rationale": "Let content lead"
+    }
+  ],
+  "rationale": [
+    {
+      "decision": "Improve the hierarchy",
+      "evidence": [
+        {
+          "pageId": "home",
+          "regionId": "heading"
+        }
+      ]
+    }
+  ],
+  "createdAt": "2026-09-23T12:00:00Z",
+  "approvedAt": "2026-09-23T12:00:00Z"
+}

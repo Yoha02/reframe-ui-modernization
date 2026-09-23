@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "title": "Archive fixture",
+  "sourceUrl": "https://example.com/",
+  "provenance": {
+    "capturedAt": "2026-09-23T12:00:00Z",
+    "method": "uploaded_evidence",
+    "tool": "contract-test"
+  },
+  "assets": [],
+  "pages": [
+    {
+      "id": "home",
+      "title": "Home",
+      "route": "/",
+      "sourceUrl": "https://example.com/",
+      "html": {
+        "objectKey": "source/index.html",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "mediaType": "text/html",
+        "byteSize": 100,
+        "immutable": true
+      },
+      "screenshot": {
+        "objectKey": "source/home.png",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "mediaType": "image/png",
+        "byteSize": 100,
+        "immutable": true
+      },
+      "text": "An independent archive",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "screenshotWidth": 1280,
+        "screenshotHeight": 720
+      },
+      "content": [
+        {
+          "id": "title",
+          "kind": "heading",
+          "text": "An independent archive",
+          "level": 1
+        }
+      ],
+      "links": [],
+      "regions": [
+        {
+          "id": "heading",
+          "label": "Main heading",
+          "role": "heading",
+          "x": 20,
+          "y": 30,
+          "width": 300,
+          "height": 60,
+          "sourceIds": [
+            "title"
+          ]
+        }
+      ],
+      "frames": [],
+      "warnings": []
+    }
+  ]
+}
