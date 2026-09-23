@@ -1,0 +1,426 @@
+{
+  "elements": [
+    {
+      "bounds": {
+        "height": 17.33333396911621,
+        "width": 131,
+        "x": 427.4479370117187,
+        "y": 232.5
+      },
+      "coords": null,
+      "href": "https://www.spacejam.com/1996/cmp/pressbox/pressboxframes.html",
+      "id": "source-0",
+      "map": null,
+      "src": null,
+      "tag": "a",
+      "text": ""
+    },
+    {
+      "bounds": {
+        "height": 56,
+        "width": 131,
+        "x": 427.4479370117187,
+        "y": 190.5
+      },
+      "coords": null,
+      "href": null,
+      "id": "source-1",
+      "map": null,
+      "src": "https://www.spacejam.com/1996/img/p-pressbox.gif",
+      "tag": "img",
+      "text": "Press Box Shuttle"
+    },
+    {
+      "bounds": {
+        "height": 17.33333396911621,
+        "width": 55,
+        "x": 596.1146240234375,
+        "y": 211
+      },
+      "coords": null,
+      "href": "https://www.spacejam.com/1996/cmp/jamcentral/jamcentralframes.html",
+      "id": "source-2",
+      "map": null,
+      "src": null,
+      "tag": "a",
+      "text": ""
+    },
+    {
+      "bounds": {
+        "height": 67,
+        "width": 55,
+        "x": 596.1146240234375,
+        "y": 158
+      },
+      "coords": null,
+      "href": null,
+      "id": "source-3",
+      "map": null,
+      "src": "https://www.spacejam.com/1996/img/p-jamcentral.gif",
+      "tag": "img",
+      "text": "Jam Central"
+    },
+    {
+      "bounds": {
+        "height": 17.33333396911621,
+        "width": 62,
+        "x": 697.25,
+        "y": 183
+      },
+      "coords": null,
+      "href": "https://www.spacejam.com/1996/cmp/bball/bballframes.html",
+      "id": "source-4",
+      "map": null,
+      "src": null,
+      "tag": "a",
+      "text": ""
+    },
+    {
+      "bounds": {
+        "height": 62,
+        "width": 62,
+        "x": 697.25,
+        "y": 135
+      },
+      "coords": null,
+      "href": null,
+      "id": "source-5",
+      "map": null,
+      "src": "https://www.spacejam.com/1996/img/p-bball.gif",
+      "tag": "img",
+      "text": "Planet B-Ball"
+    },
+    {
+      "bounds": {
+        "height": 17.33333396911621,
+        "width": 95,
+        "x": 778.03125,
+        "y": 234
+      },
+      "coords": null,
+      "href": "https://www.spacejam.com/1996/cmp/tunes/tunesframes.html",
+      "id": "source-6",
+      "map": null,
+      "src": null,
+      "tag": "a",
+      "text": ""
+    },
+    {
+      "bounds": {
+        "height": 77,
+        "width": 95,
+        "x": 778.03125,
+        "y": 171
+      },
+      "coords": null,
+      "href": null,
+      "id": "source-7",
+      "map": null,
+      "src": "https://www.spacejam.com/1996/img/p-lunartunes.gif",
+      "tag": "img",
+      "text": "Lunar Tunes"
+    },
+    {
+      "bounds": {
+        "height": 17.33333396911621,
+        "width": 63,
+        "x": 389.5416870117187,
+        "y": 326
+      },
+      "coords": null,
+      "href": "https://www.spacejam.com/1996/cmp/lineup/lineupframes.html",
+      "id": "source-8",
+      "map": null,
+      "src": null,
+      "tag": "a",
+      "text": ""
+    },
+    {
+      "bounds": {
+        "height": 52,
+        "width": 63,
+        "x": 389.5416870117187,
+        "y": 288
+      },
+      "coords": null,
+      "href": null,
+      "id": "source-9",
+      "map": null,
+      "src": "https://www.spacejam.com/1996/img/p-lineup.gif",
+      "tag": "img",
+      "text": "The Lineup"
+    },
+    {
+      "bounds": {
+        "height": 165,
+        "width": 272,
+        "x": 495.7291870117187,
+        "y": 252
+      },
+      "coords": null,
+      "href": null,
+      "id": "source-10",
+      "map": null,
+      "src": "https://www.spacejam.com/1996/img/p-jamlogo.gif",
+      "tag": "img",
+      "text": "Space Jam"
+    },
+    {
+      "bounds": {
+        "height": 17.33333396911621,
+        "width": 58,
+        "x": 821.3333740234375,
+        "y": 326
+      },
+      "coords": null,
+      "href": "https://www.spacejam.com/1996/cmp/jump/jumpframes.html",
+      "id": "source-11",
+      "map": null,
+      "src": null,
+      "tag": "a",
+      "text": ""
+    },
+    {
+      "bounds": {
+        "height": 52,
+        "width": 58,
+        "x": 821.3333740234375,
+        "y": 288
+      },
+      "coords": null,
+      "href": null,
+      "id": "source-12",
+      "map": null,
+      "src": "https://www.spacejam.com/1996/img/p-jump.gif",
+      "tag": "img",
+      "text": "Jump Station"
+    },
+    {
+      "bounds": {
+        "height": 17.33333396911621,
+        "width": 49,
+        "x": 396.5416870117187,
+        "y": 403
+      },
+      "coords": null,
+      "href": "https://www.spacejam.com/1996/cmp/junior/juniorframes.html",
+      "id": "source-13",
+      "map": null,
+      "src": null,
+      "tag": "a",
+      "text": ""
+    },
+    {
+      "bounds": {
+        "height": 57,
+        "width": 49,
+        "x": 396.5416870117187,
+        "y": 360
+      },
+      "coords": null,
+      "href": null,
+      "id": "source-14",
+      "map": null,
+      "src": "https://www.spacejam.com/1996/img/p-junior.gif",
+      "tag": "img",
+      "text": "Junior Jam"
+    },
+    {
+      "bounds": {
+        "height": 17.33333396911621,
+        "width": 94,
+        "x": 778.53125,
+        "y": 438
+      },
+      "coords": null,
+      "href": "https://shop.looneytunes.com/spacejam96?utm_source=SpaceJam1996&utm_medium=Website&utm_campaign=Theatrical2021",
+      "id": "source-15",
+      "map": null,
+      "src": null,
+      "tag": "a",
+      "text": ""
+    },
+    {
+      "bounds": {
+        "height": 72,
+        "width": 94,
+        "x": 778.53125,
+        "y": 380
+      },
+      "coords": null,
+      "href": null,
+      "id": "source-16",
+      "map": null,
+      "src": "https://www.spacejam.com/1996/img/p-studiostore.gif",
+      "tag": "img",
+      "text": "Warner Studio Store"
+    },
+    {
+      "bounds": {
+        "height": 17.33333396911621,
+        "width": 83,
+        "x": 468.09375,
+        "y": 490
+      },
+      "coords": null,
+      "href": "https://www.spacejam.com/1996/cmp/souvenirs/souvenirsframes.html",
+      "id": "source-17",
+      "map": null,
+      "src": null,
+      "tag": "a",
+      "text": ""
+    },
+    {
+      "bounds": {
+        "height": 83,
+        "width": 83,
+        "x": 468.09375,
+        "y": 421
+      },
+      "coords": null,
+      "href": null,
+      "id": "source-18",
+      "map": null,
+      "src": "https://www.spacejam.com/1996/img/p-souvenirs.gif",
+      "tag": "img",
+      "text": "Stellar Souvenirs"
+    },
+    {
+      "bounds": {
+        "height": 17.33333396911621,
+        "width": 104,
+        "x": 571.6146240234375,
+        "y": 546
+      },
+      "coords": null,
+      "href": "https://www.spacejam.com/1996/cmp/sitemap.html",
+      "id": "source-19",
+      "map": null,
+      "src": null,
+      "tag": "a",
+      "text": ""
+    },
+    {
+      "bounds": {
+        "height": 67,
+        "width": 104,
+        "x": 571.6146240234375,
+        "y": 493
+      },
+      "coords": null,
+      "href": null,
+      "id": "source-20",
+      "map": null,
+      "src": "https://www.spacejam.com/1996/img/p-sitemap.gif",
+      "tag": "img",
+      "text": "Site Map"
+    },
+    {
+      "bounds": {
+        "height": 17.33333396911621,
+        "width": 67,
+        "x": 694.75,
+        "y": 508
+      },
+      "coords": null,
+      "href": "https://www.spacejam.com/1996/cmp/behind/behindframes.html",
+      "id": "source-21",
+      "map": null,
+      "src": null,
+      "tag": "a",
+      "text": ""
+    },
+    {
+      "bounds": {
+        "height": 63,
+        "width": 67,
+        "x": 694.75,
+        "y": 459
+      },
+      "coords": null,
+      "href": null,
+      "id": "source-22",
+      "map": null,
+      "src": "https://www.spacejam.com/1996/img/p-behind.gif",
+      "tag": "img",
+      "text": "Behind the Jam"
+    },
+    {
+      "bounds": {
+        "height": 14,
+        "width": 76.1875,
+        "x": 494.25,
+        "y": 685.6666870117188
+      },
+      "coords": null,
+      "href": "https://policies.warnerbros.com/privacy/",
+      "id": "source-23",
+      "map": null,
+      "src": null,
+      "tag": "a",
+      "text": "Privacy Policy"
+    },
+    {
+      "bounds": {
+        "height": 14,
+        "width": 32.3125,
+        "x": 584.4375,
+        "y": 685.6666870117188
+      },
+      "coords": null,
+      "href": "http://policies.warnerbros.com/terms/en-us/",
+      "id": "source-24",
+      "map": null,
+      "src": null,
+      "tag": "a",
+      "text": "Terms"
+    },
+    {
+      "bounds": {
+        "height": 14,
+        "width": 67.88542175292969,
+        "x": 630.75,
+        "y": 685.6666870117188
+      },
+      "coords": null,
+      "href": "http://policies.warnerbros.com/terms/en-us/#accessibility",
+      "id": "source-25",
+      "map": null,
+      "src": null,
+      "tag": "a",
+      "text": "Accessibility"
+    },
+    {
+      "bounds": {
+        "height": 14,
+        "width": 57.77083587646485,
+        "x": 712.6354370117188,
+        "y": 685.6666870117188
+      },
+      "coords": null,
+      "href": "https://policies.warnerbros.com/privacy/en-us/#adchoices",
+      "id": "source-26",
+      "map": null,
+      "src": null,
+      "tag": "a",
+      "text": "AdChoices"
+    }
+  ],
+  "sourceUrl": "https://www.spacejam.com/1996/",
+  "title": "Space Jam",
+  "viewport": {
+    "height": 720,
+    "scrollX": 0,
+    "scrollY": 0,
+    "width": 1280
+  },
+  "screenshot": {
+    "file": "screenshot.jpg",
+    "width": 1265,
+    "height": 712,
+    "scaleX": 0.98828125,
+    "scaleY": 0.9888888888888889,
+    "captureKind": "viewport",
+    "format": "image/jpeg"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "elements": [
+    {
+      "bounds": {
+        "height": 301,
+        "width": 438,
+        "x": 421,
+        "y": 60
+      },
+      "coords": null,
+      "href": null,
+      "id": "source-0",
+      "map": null,
+      "src": "https://www.spacejam.com/1996/cmp/jamcentral/img/m-central.jpg",
+      "tag": "img",
+      "text": "navigation map"
+    },
+    {
+      "bounds": {
+        "height": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "coords": null,
+      "href": "https://www.spacejam.com/1996/cmp/jamcentral/prodnotesframes.html",
+      "id": "source-1",
+      "map": null,
+      "src": null,
+      "tag": "area",
+      "text": ""
+    },
+    {
+      "bounds": {
+        "height": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "coords": null,
+      "href": "https://www.spacejam.com/1996/cmp/jamcentral/photosframes.html",
+      "id": "source-2",
+      "map": null,
+      "src": null,
+      "tag": "area",
+      "text": ""
+    },
+    {
+      "bounds": {
+        "height": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "coords": null,
+      "href": "https://www.spacejam.com/1996/cmp/jamcentral/filmmakersframes.html",
+      "id": "source-3",
+      "map": null,
+      "src": null,
+      "tag": "area",
+      "text": ""
+    },
+    {
+      "bounds": {
+        "height": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "coords": null,
+      "href": "https://www.spacejam.com/1996/cmp/jamcentral/trailerframes.html",
+      "id": "source-4",
+      "map": null,
+      "src": null,
+      "tag": "area",
+      "text": ""
+    }
+  ],
+  "sourceUrl": "https://www.spacejam.com/1996/cmp/jamcentral/jamcentral.html",
+  "title": "Jam Central",
+  "viewport": {
+    "height": 720,
+    "scrollX": 0,
+    "scrollY": 0,
+    "width": 1280
+  },
+  "screenshot": {
+    "file": "screenshot.jpg",
+    "width": 1280,
+    "height": 720,
+    "scaleX": 1.0,
+    "scaleY": 1.0,
+    "captureKind": "viewport",
+    "format": "image/jpeg"
+  }
+}

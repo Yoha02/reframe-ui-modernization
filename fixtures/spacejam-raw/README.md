@@ -4,6 +4,6 @@ These files were collected from the publicly available Space Jam 1996 site on Se
 
 The source-inventory.json file records source URLs, content-bearing pages behind frame wrappers, checksums, and local asset paths. Asset filenames are content-derived; resolve them through this inventory rather than assuming original names. Per-page asset manifests are capture metadata.
 
-Missing before this becomes a complete sample bundle: actual page screenshot files with viewport metadata, element bounding boxes aligned to those screenshots, and the importer-specific manifest. The homepage background image may also need collecting. Do not substitute a wireframe, generated illustration, or fabricated screenshot for original evidence.
+Each page now includes an actual browser screenshot and capture-metadata.json with viewport dimensions, source element bounds, text, links, and image-map coordinates. Screenshot pixel dimensions may differ from CSS viewport dimensions: use the recorded scaleX/scaleY when cropping. The homepage background is included. The remaining step is mapping these captured inputs into the application importer manifest. These are viewport captures of the content-bearing documents, not full scroll captures or frame-wrapper composites. Do not substitute generated illustrations for original evidence.
 
 Use these inputs through the same importer, evaluation, design-system generation, and page renderer that process other sites. Do not add domain-specific production logic for Space Jam. Do not execute legacy scripts while parsing the source.

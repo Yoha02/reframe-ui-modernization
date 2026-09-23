@@ -1,6 +1,6 @@
 {
   "collected_at": "2026-09-23T20:50:21.1092858Z",
-  "status": "raw_evidence_incomplete",
+  "status": "source_evidence_captured_import_manifest_pending",
   "pages": [
     {
       "title": "Home",
@@ -86,10 +86,17 @@
           "original_name": "wbPolicyUpdatedNoticeStyle.css",
           "file": "spacejam-home/assets/de19cb1baa7860ca.css",
           "content_type": "text/css"
+        },
+        {
+          "source_url": "https://www.spacejam.com/1996/img/bg_stars.gif",
+          "original_name": "bg_stars.gif",
+          "file": "spacejam-home/assets/bg_stars.gif",
+          "content_type": "image/gif"
         }
       ],
-      "screenshot_file": null,
-      "capture_note": "Original assets and HTML collected; screenshot export and application-specific bundle validation remain pending."
+      "screenshot_file": "spacejam-home/screenshot.jpg",
+      "capture_note": "Original assets and HTML collected; screenshot export and application-specific bundle validation remain pending.",
+      "capture_metadata_file": "spacejam-home/capture-metadata.json"
     },
     {
       "title": "The Lineup",
@@ -117,8 +124,9 @@
           "content_type": "image/jpeg"
         }
       ],
-      "screenshot_file": null,
-      "capture_note": "Original assets and HTML collected; screenshot export and application-specific bundle validation remain pending."
+      "screenshot_file": "spacejam-lineup/screenshot.jpg",
+      "capture_note": "Original assets and HTML collected; screenshot export and application-specific bundle validation remain pending.",
+      "capture_metadata_file": "spacejam-lineup/capture-metadata.json"
     },
     {
       "title": "Jam Central",
@@ -140,8 +148,9 @@
           "content_type": "image/jpeg"
         }
       ],
-      "screenshot_file": null,
-      "capture_note": "Original assets and HTML collected; screenshot export and application-specific bundle validation remain pending."
+      "screenshot_file": "spacejam-central/screenshot.jpg",
+      "capture_note": "Original assets and HTML collected; screenshot export and application-specific bundle validation remain pending.",
+      "capture_metadata_file": "spacejam-central/capture-metadata.json"
     }
   ]
 }
