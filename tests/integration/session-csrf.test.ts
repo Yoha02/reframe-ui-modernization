@@ -14,9 +14,10 @@ it('guards project requests before handlers and issues an owner-only secure sess
   expect((await call('/api/projects','POST',{ Cookie: cookie })).status).toBe(403);
   const mismatch = await call('/api/projects','POST',{ Cookie: cookie,'X-CSRF-Token': 'wrong' });
   expect(mismatch.status).toBe(403); expect(await mismatch.json()).toMatchObject({ errorCode: 'csrf_invalid' });
-  // Guard success reaches the existing router; project creation is a later work order.
-  expect((await call('/api/projects','POST',{ Cookie: cookie,'X-CSRF-Token': csrfToken })).status).toBe(404);
-  expect((await call('/api/projects','GET',{ Cookie: cookie })).status).toBe(404);
+  // Valid guards reach the repository boundary, which honestly reports the absent test DB.
+  const allowed = await call('/api/projects','POST',{ Cookie: cookie,'X-CSRF-Token': csrfToken });
+  expect(allowed.status).toBe(503); expect(await allowed.json()).toMatchObject({ error: { code: 'DATABASE_UNAVAILABLE' } });
+  expect((await call('/api/projects','GET',{ Cookie: cookie })).status).toBe(503);
   expect((await call('/api/projects','POST',{ Cookie: cookie,'X-CSRF-Token': csrfToken,Origin: 'https://other.test' })).status).toBe(403);
   expect((await call('/api/session','GET',{ 'oai-authenticated-user-email': '' })).status).toBe(401);
   const renewed = await call('/api/session','GET',{ Cookie: cookie });

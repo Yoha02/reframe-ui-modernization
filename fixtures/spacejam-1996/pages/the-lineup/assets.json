@@ -1,0 +1,41 @@
+[
+  {
+    "id": "asset-13",
+    "sourceUrl": "https://www.spacejam.com/1996/cmp/lineup/img/m-lineup.jpg",
+    "originalPath": "m-lineup.jpg",
+    "file": {
+      "objectKey": "assets/asset-13.jpg",
+      "sha256": "ffd3cacb8d9398b1ca375052d0da63b5b8ea265872d062d8dd93f8e4d8568255",
+      "mediaType": "image/jpeg",
+      "byteSize": 27353,
+      "immutable": true
+    },
+    "alt": "navigation map"
+  },
+  {
+    "id": "asset-14",
+    "sourceUrl": "https://www.spacejam.com/1996/cmp/lineup/img/n-games.gif",
+    "originalPath": "n-games.gif",
+    "file": {
+      "objectKey": "assets/asset-14.gif",
+      "sha256": "870b1c1754c350dd219696fd1b06122c78ad5ad28b29b3f7d68db7831a16189b",
+      "mediaType": "image/gif",
+      "byteSize": 11718,
+      "immutable": true
+    },
+    "alt": "Games"
+  },
+  {
+    "id": "asset-15",
+    "sourceUrl": "https://www.spacejam.com/1996/img/bg_stars.jpg",
+    "originalPath": "bg_stars.jpg",
+    "file": {
+      "objectKey": "assets/asset-15.jpg",
+      "sha256": "499627c4e6776dc3808401d07ba51e8ec45a632bf5400991457860e6cf93842d",
+      "mediaType": "image/jpeg",
+      "byteSize": 2045,
+      "immutable": true
+    },
+    "alt": "bg_stars.jpg"
+  }
+]

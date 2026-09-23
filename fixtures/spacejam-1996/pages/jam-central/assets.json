@@ -1,0 +1,28 @@
+[
+  {
+    "id": "asset-15",
+    "sourceUrl": "https://www.spacejam.com/1996/img/bg_stars.jpg",
+    "originalPath": "bg_stars.jpg",
+    "file": {
+      "objectKey": "assets/asset-15.jpg",
+      "sha256": "499627c4e6776dc3808401d07ba51e8ec45a632bf5400991457860e6cf93842d",
+      "mediaType": "image/jpeg",
+      "byteSize": 2045,
+      "immutable": true
+    },
+    "alt": "bg_stars.jpg"
+  },
+  {
+    "id": "asset-16",
+    "sourceUrl": "https://www.spacejam.com/1996/cmp/jamcentral/img/m-central.jpg",
+    "originalPath": "m-central.jpg",
+    "file": {
+      "objectKey": "assets/asset-16.jpg",
+      "sha256": "eeac9ebaeeb2e3fbcba533ec0fbd4245a47e613216f54d04112cf4e5f0400099",
+      "mediaType": "image/jpeg",
+      "byteSize": 27788,
+      "immutable": true
+    },
+    "alt": "navigation map"
+  }
+]

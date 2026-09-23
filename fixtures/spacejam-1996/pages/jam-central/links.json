@@ -1,0 +1,26 @@
+[
+  {
+    "id": "jam-central-source-1",
+    "label": "prodnotesframes",
+    "href": "https://www.spacejam.com/1996/cmp/jamcentral/prodnotesframes.html",
+    "origin": "image_map"
+  },
+  {
+    "id": "jam-central-source-2",
+    "label": "photosframes",
+    "href": "https://www.spacejam.com/1996/cmp/jamcentral/photosframes.html",
+    "origin": "image_map"
+  },
+  {
+    "id": "jam-central-source-3",
+    "label": "filmmakersframes",
+    "href": "https://www.spacejam.com/1996/cmp/jamcentral/filmmakersframes.html",
+    "origin": "image_map"
+  },
+  {
+    "id": "jam-central-source-4",
+    "label": "trailerframes",
+    "href": "https://www.spacejam.com/1996/cmp/jamcentral/trailerframes.html",
+    "origin": "image_map"
+  }
+]

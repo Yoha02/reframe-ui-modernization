@@ -1,0 +1,171 @@
+[
+  {
+    "id": "asset-0",
+    "sourceUrl": "https://www.spacejam.com/1996/img/p-pressbox.gif",
+    "originalPath": "p-pressbox.gif",
+    "file": {
+      "objectKey": "assets/asset-0.gif",
+      "sha256": "b56b4c6efd707366588a94532483632355f3d2b42df7c3fa6d6a55038ccbcdfb",
+      "mediaType": "image/gif",
+      "byteSize": 4422,
+      "immutable": true
+    },
+    "alt": "Press Box Shuttle"
+  },
+  {
+    "id": "asset-1",
+    "sourceUrl": "https://www.spacejam.com/1996/img/p-jamcentral.gif",
+    "originalPath": "p-jamcentral.gif",
+    "file": {
+      "objectKey": "assets/asset-1.gif",
+      "sha256": "e778d2bf60228b8d0a0155a597b9285a166db7a3225d208c96a6a546cad7a467",
+      "mediaType": "image/gif",
+      "byteSize": 1908,
+      "immutable": true
+    },
+    "alt": "Jam Central"
+  },
+  {
+    "id": "asset-2",
+    "sourceUrl": "https://www.spacejam.com/1996/img/p-jamlogo.gif",
+    "originalPath": "p-jamlogo.gif",
+    "file": {
+      "objectKey": "assets/asset-2.gif",
+      "sha256": "98ab200a46caa418609f9636bfde9b1afce49ae84a08dafb166130207547f74d",
+      "mediaType": "image/gif",
+      "byteSize": 15410,
+      "immutable": true
+    },
+    "alt": "Space Jam"
+  },
+  {
+    "id": "asset-3",
+    "sourceUrl": "https://www.spacejam.com/1996/img/p-bball.gif",
+    "originalPath": "p-bball.gif",
+    "file": {
+      "objectKey": "assets/asset-3.gif",
+      "sha256": "5ca2abba75b0aa365c44f5d9cbe51dda1639453821a9ce856ce680e0f61e0559",
+      "mediaType": "image/gif",
+      "byteSize": 1368,
+      "immutable": true
+    },
+    "alt": "Planet B-Ball"
+  },
+  {
+    "id": "asset-4",
+    "sourceUrl": "https://www.spacejam.com/1996/img/p-lunartunes.gif",
+    "originalPath": "p-lunartunes.gif",
+    "file": {
+      "objectKey": "assets/asset-4.gif",
+      "sha256": "e2d620beefcef5be24d8b730cf30a266f85ccefd0c4984674763aec0da3caba0",
+      "mediaType": "image/gif",
+      "byteSize": 3538,
+      "immutable": true
+    },
+    "alt": "Lunar Tunes"
+  },
+  {
+    "id": "asset-5",
+    "sourceUrl": "https://www.spacejam.com/1996/img/p-lineup.gif",
+    "originalPath": "p-lineup.gif",
+    "file": {
+      "objectKey": "assets/asset-5.gif",
+      "sha256": "e90cdcc57340e9c4208274eb002ade03e30830cd3a6dc7c2aac6749f1f750203",
+      "mediaType": "image/gif",
+      "byteSize": 1929,
+      "immutable": true
+    },
+    "alt": "The Lineup"
+  },
+  {
+    "id": "asset-6",
+    "sourceUrl": "https://www.spacejam.com/1996/img/p-jump.gif",
+    "originalPath": "p-jump.gif",
+    "file": {
+      "objectKey": "assets/asset-6.gif",
+      "sha256": "93e3f7e5e10ee0f114764c91d82463e43518bccea84ecb12b72b6fa987fd9be2",
+      "mediaType": "image/gif",
+      "byteSize": 2593,
+      "immutable": true
+    },
+    "alt": "Jump Station"
+  },
+  {
+    "id": "asset-7",
+    "sourceUrl": "https://www.spacejam.com/1996/img/p-junior.gif",
+    "originalPath": "p-junior.gif",
+    "file": {
+      "objectKey": "assets/asset-7.gif",
+      "sha256": "b9410f292c380afb228275c8c1df53f91f3c27cad91a6ae492407117ba57cf66",
+      "mediaType": "image/gif",
+      "byteSize": 1253,
+      "immutable": true
+    },
+    "alt": "Junior Jam"
+  },
+  {
+    "id": "asset-8",
+    "sourceUrl": "https://www.spacejam.com/1996/img/p-studiostore.gif",
+    "originalPath": "p-studiostore.gif",
+    "file": {
+      "objectKey": "assets/asset-8.gif",
+      "sha256": "74c259553b42b62cff8372e3369b36e7ec63f9266e4345babeb9ccfdb4427cef",
+      "mediaType": "image/gif",
+      "byteSize": 2745,
+      "immutable": true
+    },
+    "alt": "Warner Studio Store"
+  },
+  {
+    "id": "asset-9",
+    "sourceUrl": "https://www.spacejam.com/1996/img/p-souvenirs.gif",
+    "originalPath": "p-souvenirs.gif",
+    "file": {
+      "objectKey": "assets/asset-9.gif",
+      "sha256": "c44cde024b8b7f92d3156226b907628f8a05331de94ae6bccd2d52bbe5d30e36",
+      "mediaType": "image/gif",
+      "byteSize": 3594,
+      "immutable": true
+    },
+    "alt": "Stellar Souvenirs"
+  },
+  {
+    "id": "asset-10",
+    "sourceUrl": "https://www.spacejam.com/1996/img/p-sitemap.gif",
+    "originalPath": "p-sitemap.gif",
+    "file": {
+      "objectKey": "assets/asset-10.gif",
+      "sha256": "8bd53dd782ba815a03a11a514b04f32b4dc4c1292ac3bd09dabb0f58a76d8061",
+      "mediaType": "image/gif",
+      "byteSize": 3401,
+      "immutable": true
+    },
+    "alt": "Site Map"
+  },
+  {
+    "id": "asset-11",
+    "sourceUrl": "https://www.spacejam.com/1996/img/p-behind.gif",
+    "originalPath": "p-behind.gif",
+    "file": {
+      "objectKey": "assets/asset-11.gif",
+      "sha256": "0e5eb15f67ef1b24f21d737c5d7e213fea4bbec8dccf2759eb7f0cc64a738999",
+      "mediaType": "image/gif",
+      "byteSize": 1902,
+      "immutable": true
+    },
+    "alt": "Behind the Jam"
+  },
+  {
+    "id": "asset-12",
+    "sourceUrl": "https://www.spacejam.com/1996/img/bg_stars.gif",
+    "originalPath": "bg_stars.gif",
+    "file": {
+      "objectKey": "assets/asset-12.gif",
+      "sha256": "9348685868d63a82d178f059a0f52aadd4e26d087a8df9753b0a53f599a3a39e",
+      "mediaType": "image/gif",
+      "byteSize": 8452,
+      "immutable": true
+    },
+    "alt": "bg_stars.gif"
+  }
+]

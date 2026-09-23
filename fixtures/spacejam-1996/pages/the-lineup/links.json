@@ -1,0 +1,32 @@
+[
+  {
+    "id": "the-lineup-source-1",
+    "label": "castbiosframes",
+    "href": "https://www.spacejam.com/1996/cmp/lineup/castbiosframes.html",
+    "origin": "image_map"
+  },
+  {
+    "id": "the-lineup-source-2",
+    "label": "playerbiosframes",
+    "href": "https://www.spacejam.com/1996/cmp/lineup/playerbiosframes.html",
+    "origin": "image_map"
+  },
+  {
+    "id": "the-lineup-source-3",
+    "label": "looneybiosframes",
+    "href": "https://www.spacejam.com/1996/cmp/lineup/looneybiosframes.html",
+    "origin": "image_map"
+  },
+  {
+    "id": "the-lineup-source-4",
+    "label": "badguysframes",
+    "href": "https://www.spacejam.com/1996/cmp/lineup/badguysframes.html",
+    "origin": "image_map"
+  },
+  {
+    "id": "the-lineup-source-5",
+    "label": "Games",
+    "href": "https://www.spacejam.com/1996/cmp/lineup/quizframes.html",
+    "origin": "anchor"
+  }
+]

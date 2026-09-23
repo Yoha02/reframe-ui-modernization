@@ -1,0 +1,92 @@
+[
+  {
+    "id": "home-source-0",
+    "label": "Press Box Shuttle",
+    "href": "https://www.spacejam.com/1996/cmp/pressbox/pressboxframes.html",
+    "origin": "anchor"
+  },
+  {
+    "id": "home-source-2",
+    "label": "Jam Central",
+    "href": "https://www.spacejam.com/1996/cmp/jamcentral/jamcentralframes.html",
+    "origin": "anchor"
+  },
+  {
+    "id": "home-source-4",
+    "label": "Planet B-Ball",
+    "href": "https://www.spacejam.com/1996/cmp/bball/bballframes.html",
+    "origin": "anchor"
+  },
+  {
+    "id": "home-source-6",
+    "label": "Lunar Tunes",
+    "href": "https://www.spacejam.com/1996/cmp/tunes/tunesframes.html",
+    "origin": "anchor"
+  },
+  {
+    "id": "home-source-8",
+    "label": "The Lineup",
+    "href": "https://www.spacejam.com/1996/cmp/lineup/lineupframes.html",
+    "origin": "anchor"
+  },
+  {
+    "id": "home-source-11",
+    "label": "Jump Station",
+    "href": "https://www.spacejam.com/1996/cmp/jump/jumpframes.html",
+    "origin": "anchor"
+  },
+  {
+    "id": "home-source-13",
+    "label": "Junior Jam",
+    "href": "https://www.spacejam.com/1996/cmp/junior/juniorframes.html",
+    "origin": "anchor"
+  },
+  {
+    "id": "home-source-15",
+    "label": "Warner Studio Store",
+    "href": "https://shop.looneytunes.com/spacejam96?utm_source=SpaceJam1996&utm_medium=Website&utm_campaign=Theatrical2021",
+    "origin": "anchor"
+  },
+  {
+    "id": "home-source-17",
+    "label": "Stellar Souvenirs",
+    "href": "https://www.spacejam.com/1996/cmp/souvenirs/souvenirsframes.html",
+    "origin": "anchor"
+  },
+  {
+    "id": "home-source-19",
+    "label": "Site Map",
+    "href": "https://www.spacejam.com/1996/cmp/sitemap.html",
+    "origin": "anchor"
+  },
+  {
+    "id": "home-source-21",
+    "label": "Behind the Jam",
+    "href": "https://www.spacejam.com/1996/cmp/behind/behindframes.html",
+    "origin": "anchor"
+  },
+  {
+    "id": "home-source-23",
+    "label": "Privacy Policy",
+    "href": "https://policies.warnerbros.com/privacy/",
+    "origin": "anchor"
+  },
+  {
+    "id": "home-source-24",
+    "label": "Terms",
+    "href": "http://policies.warnerbros.com/terms/en-us/",
+    "origin": "anchor"
+  },
+  {
+    "id": "home-source-25",
+    "label": "Accessibility",
+    "href": "http://policies.warnerbros.com/terms/en-us/#accessibility",
+    "origin": "anchor"
+  },
+  {
+    "id": "home-source-26",
+    "label": "AdChoices",
+    "href": "https://policies.warnerbros.com/privacy/en-us/#adchoices",
+    "origin": "anchor"
+  }
+]
