@@ -2,7 +2,7 @@ import { Miniflare,convertV4MiniflareOptions } from 'miniflare';
 import { readFile } from 'node:fs/promises';
 import { randomBytes } from 'node:crypto';
 const mf = new Miniflare(convertV4MiniflareOptions({
-  host: '127.0.0.1',port: 8787,modules: true,scriptPath: 'dist/worker/index.js',compatibilityDate: '2026-09-01',
+  host: '127.0.0.1',port: 8787,modules: true,scriptPath: 'dist/server/index.js',compatibilityDate: '2026-09-01',
   d1Databases: ['DB'],d1Persist: '.wrangler/state/d1',r2Buckets: ['FILES'],r2Persist: '.wrangler/state/r2',
   bindings: { LOCAL_DEVELOPMENT: 'true',SESSION_SIGNING_SECRET: randomBytes(48).toString('hex') },
   assets: { directory: 'dist/client',binding: 'ASSETS',run_worker_first: true,routerConfig: { has_user_worker: true } },
