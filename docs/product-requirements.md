@@ -6,7 +6,7 @@ Build a standalone UI modernization workbench through Forge. ChatGPT Sites is th
 
 Mandatory sequence: Import -> Evaluate -> Decompose -> Generate a site-specific design system -> Explicit user approval -> Generate and approve each page -> Publish immutable static release.
 
-Hosting update: use a Sites-compatible TypeScript Worker, React/TypeScript, D1 DB and R2 FILES bindings. Import actual screenshot/source evidence bundles. A separate local capture utility may prepare evidence; do not run Playwright inside the hosted Worker. Runtime model provider and budget are unresolved. Missing credentials must produce a clear configuration-needed state, never fake results.
+Hosting update: use a Sites-compatible TypeScript Worker, React/TypeScript, D1 DB and R2 FILES bindings. Import actual screenshot/source evidence bundles. A separate local capture utility may prepare evidence; do not run Playwright inside the hosted Worker. Runtime provider is OpenAI, using the user's own API account. Secure OPENAI_API_KEY entry and demo budget are pending; use a configurable OPENAI_MODEL. Missing credentials must produce a clear configuration-needed state, never fake results.
 ## 5. Bounded MVP
 
 **Input:** one static HTML/CSS/assets bundle with screenshots and source metadata. Include a prepared, clearly labeled Space Jam sample. Live URL capture is optional after the bundle path works; never disguise a prepared import as live crawling.
