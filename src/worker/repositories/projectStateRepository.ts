@@ -43,6 +43,7 @@ export function deriveProjectStateSummary(rows: ProjectStateRows): ProjectStateR
   const evaluated = hasEvidence && !!project.findings_json;
   const decomposed = evaluated && rows.componentCount > 0;
   const allBuilt = pages.length > 0 && pages.every(page => !!page.specification_json) && !pageSummaries.some(page => page.needsRefresh);
+  const anyBuilt = pages.some(page => !!page.specification_json && page.status !== 'stale') && !designStale;
   const allApproved = pages.length > 0 && pageSummaries.every(page => page.approvalState === 'Approved');
   const release = releases[0];
   const published = release?.public_state === 'published' && !!release.public_url && !!release.verified_at;
@@ -52,7 +53,7 @@ export function deriveProjectStateSummary(rows: ProjectStateRows): ProjectStateR
     ['decompose','Decompose',decomposed ? 'Completed' : evaluated ? 'Ready' : 'Blocked',evaluated ? null : 'Evaluate the site first.','Map components'],
     ['design_system','Design System',designStale ? 'Needs refresh' : approved ? 'Approved' : draft ? 'Draft' : decomposed ? 'Ready' : 'Blocked',decomposed ? null : 'Evaluate and map components first.','Create design system'],
     ['rebuild','Rebuild',allBuilt ? 'Completed' : approved && !designStale ? 'Ready' : 'Blocked',approved && !designStale ? null : 'Approve the current design system first.','Rebuild page'],
-    ['review','Review',allApproved ? 'Approved' : allBuilt ? 'Ready' : 'Blocked',allBuilt ? null : 'Rebuild a page before review.','Review pages'],
+    ['review','Review',allApproved ? 'Approved' : anyBuilt ? 'Ready' : 'Blocked',anyBuilt ? null : 'Rebuild a page before review.','Review pages'],
     ['publish','Publish',published ? 'Published' : allApproved ? 'Ready' : 'Blocked',allApproved ? null : 'Approve every included page first.','Publish release'],
   ] as const;
   const stages = Object.fromEntries(definitions.map(([key,label,status,blockedReason,primaryAction]) => {

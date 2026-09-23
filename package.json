@@ -12,7 +12,7 @@
     "test": "vitest run",
     "build": "npm run typecheck && npm run build:app && npm run build:worker",
     "build:app": "vite build",
-    "build:worker": "esbuild src/worker/index.ts --bundle --format=esm --platform=neutral --target=es2022 --loader:.sql=text --outfile=dist/server/index.js",
+    "build:worker": "esbuild src/worker/index.ts --bundle --format=esm --platform=neutral --target=es2022 --loader:.sql=text --loader:.woff2=dataurl --loader:.txt=text --outfile=dist/server/index.js",
     "build:releases": "esbuild src/release-worker/index.ts --bundle --format=esm --platform=neutral --target=es2022 --outfile=dist/releases/index.js"
   },
   "dependencies": {

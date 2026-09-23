@@ -8,6 +8,8 @@ import { StorageError,type FilesEnvironment } from './storage/filesRepository';
 import { modelRoutes } from './api/modelActions';
 import { releaseRoutes } from './api/releases';
 import { ensureDatabase } from './db/initialize';
+import { canvasRoutes } from './api/canvas';
+import { componentCorrectionRoutes } from './api/componentCorrections';
 import { getModelProviderConfigStatus,type ModelEnv } from './model/providerAdapter';
 export interface AssetFetcher { fetch(request: Request): Promise<Response> }
 export interface RuntimeEnv extends SecurityEnvironment,FilesEnvironment,ModelEnv { ASSETS?: AssetFetcher; DB?: D1Binding; RELEASE_ORIGIN?: string; RELEASE_PUBLISH_SECRET?: string }
@@ -39,6 +41,10 @@ export default {
         }
         const stateMatch = path.match(/^\/api\/projects\/([^/]+)\/state$/);
         if (stateMatch && request.method === 'GET') return await getProjectState(stateMatch[1],env);
+        const canvas = await canvasRoutes(request,env);
+        if (canvas) return canvas;
+        const correction = await componentCorrectionRoutes(request,env);
+        if (correction) return correction;
         const response = await projectRoutes(request,env);
         if (response) return response;
         const generated = await modelRoutes(request,env);

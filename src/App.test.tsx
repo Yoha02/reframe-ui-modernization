@@ -4,6 +4,7 @@ import App from './App';
 
 afterEach(() => { cleanup(); vi.unstubAllGlobals(); });
 it('keeps import disabled when the backend is unavailable', async () => {
+  vi.spyOn(window,'scrollTo').mockImplementation(() => {});
   vi.stubGlobal('fetch',vi.fn().mockResolvedValue(Response.json({ message: 'The workspace is unavailable.' },{ status: 503 })));
   const { container } = render(<App />);
   expect(screen.getByRole('link', { name: 'Reframe home' })).toBeTruthy();

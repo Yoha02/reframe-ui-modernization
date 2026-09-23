@@ -12,7 +12,8 @@ import type { DesignSystemVersion } from '../../src/shared/schemas/designSystemV
 import type { PageSpecification } from '../../src/shared/schemas/pageSchema';
 import { renderStaticPage } from '../../src/worker/services/staticRenderer';
 import releaseWorker from '../../src/release-worker';
-import { unzipSync } from 'fflate';
+import { unzipSync,zipSync,strToU8 } from 'fflate';
+import { sha256 } from '../../src/worker/storage/filesRepository';
 let db: SqliteD1,env: RuntimeEnv,headers: Record<string,string>,manifest: EvidenceManifest;
 const read = (path: string) => readFileSync(new URL(path,import.meta.url));
 const tokens = JSON.parse(read('../fixtures/schemas/design-system-version.valid.json').toString()).tokens;
@@ -57,6 +58,7 @@ it('runs validated model stages, freezes reviewed design, preserves source and r
   expect(spec.preservedContent).toEqual(page.content);
   const first = await renderStaticPage(spec,generated.design,manifest),second = await renderStaticPage(spec,generated.design,manifest);
   expect(first).toEqual(second); expect(first.html).not.toContain('<script');
+  expect(first.css).toContain('@font-face'); expect(first.css).toContain('data:font/woff2');
   expect((await request(`pages/${page.id}/approve`,{ generationId: 'wrong',confirm: true })).status).toBe(409);
   expect((await request(`pages/${page.id}/approve`,{ generationId: spec.id,confirm: true })).status).toBe(200);
   const state = await (await request('state')).json() as { approvalCounts: { approved: number }; stages: { publish: { status: string } } };
@@ -82,6 +84,17 @@ it('runs validated model stages, freezes reviewed design, preserves source and r
   expect(new TextDecoder().decode(zip['index.html'])).toBe(await publicPage.text());
   expect(zip['the-lineup/index.html']).toBeTruthy(); expect(zip['jam-central/index.html']).toBeTruthy();
   expect(db.sqlite.prepare('SELECT public_state FROM Releases').get()!.public_state).toBe('published');
+  const repeated = await releaseWorker.fetch(new Request(`${env.RELEASE_ORIGIN}/internal/publish`,{ method: 'POST',headers: { Authorization: `Bearer ${publicEnv.RELEASE_PUBLISH_SECRET}` },body: Uint8Array.from(zipSync(zip)) }),publicEnv);
+  expect(repeated.status).toBe(200);
+  const savedHome = await (await releaseWorker.fetch(new Request(release.publicUrl),publicEnv)).text();
+  zip['index.html'] = strToU8(savedHome + '<p>Changed</p>');
+  const changedManifest = JSON.parse(new TextDecoder().decode(zip['release-manifest.json']));
+  const homeEntry = changedManifest.files.find((file: { path: string }) => file.path === 'index.html');
+  homeEntry.sha256 = await sha256(Uint8Array.from(zip['index.html']).buffer); homeEntry.byteSize = zip['index.html'].length;
+  zip['release-manifest.json'] = strToU8(JSON.stringify(changedManifest));
+  const overwrite = await releaseWorker.fetch(new Request(`${env.RELEASE_ORIGIN}/internal/publish`,{ method: 'POST',headers: { Authorization: `Bearer ${publicEnv.RELEASE_PUBLISH_SECRET}` },body: Uint8Array.from(zipSync(zip)) }),publicEnv);
+  expect(overwrite.status).toBe(409);
+  expect(await (await releaseWorker.fetch(new Request(release.publicUrl),publicEnv)).text()).toBe(savedHome);
   expect((await request(`pages/${page.id}/rebuild`,{})).status).toBe(201);
   expect(model).toHaveBeenCalledTimes(6);
 });
@@ -91,6 +104,21 @@ it('rejects malformed model output without advancing state, and retains a visibl
   expect(response.status).toBe(422);
   expect(db.sqlite.prepare('SELECT findings_json FROM Projects').get()!.findings_json).toBeNull();
   expect(db.sqlite.prepare("SELECT status FROM GenerationRuns WHERE stage='evaluate'").get()!.status).toBe('failed');
+});
+it('persists reviewed component decisions and canvas positions, rejects stale board edits and freezes decisions once design begins', async () => {
+  mockModel(); await request('evaluation',{}); await request('decomposition',{});
+  const correction = await request('components/navigation/corrections',{ action: 'rename',value: 'Reviewed navigation' },'PATCH');
+  expect(correction.status).toBe(200);
+  expect(await correction.json()).toMatchObject({ effectiveComponent: { label: 'Reviewed navigation' } });
+  const original = db.sqlite.prepare('SELECT evidence_json FROM Components').get()!.evidence_json as string;
+  expect(JSON.parse(original).label).toBe('Source navigation');
+  expect((await request('components/other/corrections',{ action: 'rename',value: 'Other' },'PATCH')).status).toBe(404);
+  const board = { rowVersion: 0,nodes: [{ id: 'navigation',x: 520,y: -30 }],viewport: { x: 20,y: 40,zoom: .7 } };
+  expect((await request('canvas-layout',board,'PUT')).status).toBe(200);
+  expect(await (await request('canvas-layout')).json()).toEqual({ ...board,rowVersion: 1 });
+  expect((await request('canvas-layout',board,'PUT')).status).toBe(409);
+  await request('design-systems',{});
+  expect((await request('components/navigation/corrections',{ action: 'rename',value: 'Too late' },'PATCH')).status).toBe(409);
 });
 it('does not contact the provider without both a key and approved budget', async () => {
   const model = mockModel(); env.OPENAI_BUDGET_USD = undefined;

@@ -58,7 +58,14 @@ export async function releaseRoutes(request: Request,env: RuntimeEnv): Promise<R
     if (!published.ok) throw new Error('Release receiver rejected upload');
     const publicUrl = new URL(`/sites/${releaseId}/`,origin).href;
     for (const entry of transfer.files) {
-      const check = await fetch(new URL(entry.path,publicUrl),{ redirect: 'manual',signal: AbortSignal.timeout(15000) });
+      const path = new URL(entry.path,publicUrl);
+      if (entry.mediaType === 'text/html') {
+        const page = await fetch(path,{ method: 'HEAD',redirect: 'manual',signal: AbortSignal.timeout(15000) });
+        if (!page.ok || !page.headers.get('Content-Type')?.startsWith('text/html')) throw new Error('Public page unavailable');
+      }
+      // The host may append security markup to HTML. Verify canonical artifact bytes independently.
+      path.searchParams.set('artifact','1');
+      const check = await fetch(path,{ redirect: 'manual',signal: AbortSignal.timeout(15000) });
       if (!check.ok || await sha256(await check.arrayBuffer()) !== entry.sha256) throw new Error('Public artifact verification failed');
     }
     const verifiedAt = new Date().toISOString(),complete = ReleaseManifestSchema.parse({ ...manifest,publicState: 'published',publicUrl,verifiedAt });

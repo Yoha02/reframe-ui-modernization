@@ -13,6 +13,8 @@ import { executeModelRun } from '../model/modelRunExecutor';
 import { renderStaticPage } from '../services/staticRenderer';
 import { jsonBody } from './projectActions';
 import { authorIdentity } from '../security/session';
+import { effectiveComponent } from './componentCorrections';
+import { contrastRatio } from '../../shared/design/contrast';
 
 function validateRefs(refs: { pageId: string; sourceId: string | null; regionId: string | null }[],manifest: EvidenceManifest) {
   for (const ref of refs) {
@@ -32,7 +34,7 @@ export async function modelRoutes(request: Request,env: RuntimeEnv): Promise<Res
     const components = await db.prepare('SELECT evidence_json,decision_json FROM Components WHERE project_id = ? ORDER BY rowid').bind(projectId).all<{ evidence_json: string; decision_json: string | null }>();
     const design = await db.prepare("SELECT manifest_json FROM DesignSystemVersions WHERE project_id = ? ORDER BY (status = 'draft') DESC,version DESC LIMIT 1").bind(projectId).first<{ manifest_json: string }>();
     return Response.json({ manifest: rows.project.manifest_json ? JSON.parse(rows.project.manifest_json) : null,findings: rows.project.findings_json ? JSON.parse(rows.project.findings_json) : null,
-      components: components.results.map(row => ({ ...JSON.parse(row.evidence_json),correction: row.decision_json ? JSON.parse(row.decision_json) : null })),
+      components: components.results.map(effectiveComponent),
       design: design ? JSON.parse(design.manifest_json) : null,designHash: design ? await sha256(new TextEncoder().encode(design.manifest_json).buffer) : null,
       pages: rows.pages.map(page => ({ id: page.id,specification: page.specification_json ? JSON.parse(page.specification_json) : null })),
     },{ headers: { 'Cache-Control': 'no-store' } });
@@ -62,7 +64,7 @@ export async function modelRoutes(request: Request,env: RuntimeEnv): Promise<Res
   }
   if (['design-systems','design-systems/generate'].includes(action) && request.method === 'POST') {
     assertWorkflowGateAllowed(state,'GENERATE_DESIGN_SYSTEM');
-    const components = (await db.prepare('SELECT evidence_json,decision_json FROM Components WHERE project_id = ?').bind(projectId).all()).results;
+    const components = (await db.prepare('SELECT evidence_json,decision_json FROM Components WHERE project_id = ?').bind(projectId).all<{ evidence_json: string; decision_json: string | null }>()).results.map(effectiveComponent).filter(component => !component.rejected);
     const result = await executeModelRun({ ...base,context: `${context}\nReviewed components: ${JSON.stringify(components)}`,stage: 'design_system',schema: DesignResponseSchema,images: await screenshots(),
       instruction: 'Create a distinctive, coherent modernization design system derived from this site. Preserve recognizable brand colors while improving readability. Choose warm or atmospheric backgrounds suited to the source, contrasting foregrounds, restrained accent, strong typography, deliberate spacing and component recipes. Avoid generic enterprise dashboard styling. Explain each decision with existing evidence references. Target accessible text contrast; do not claim a measured contrast ratio.',
       validate: value => validateRefs(value.evidenceRationale.flatMap(reason => reason.evidenceRefs),manifest),
@@ -92,6 +94,7 @@ export async function modelRoutes(request: Request,env: RuntimeEnv): Promise<Res
     }
     assertWorkflowGateAllowed(state,'APPROVE_DESIGN_SYSTEM');
     if (body.confirm !== true) throw new ApiError('EXPLICIT_APPROVAL_REQUIRED',400,'Explicit design approval is required.');
+    if (contrastRatio(current.tokens.colors.text,current.tokens.colors.background) < 4.5 || contrastRatio(current.tokens.colors.text,current.tokens.colors.surface) < 4.5) throw new ApiError('DESIGN_CONTRAST_LOW',422,'Increase text contrast on both background and surface colors before approval.');
     const approvedAt = new Date().toISOString(),approvedBy = authorIdentity(request,env);
     const approved = DesignSystemVersionSchema.parse({ ...current,status: 'approved',immutable: true,approvedAt,approvedBy });
     const exists = "EXISTS (SELECT 1 FROM DesignSystemVersions WHERE id = ? AND status = 'draft' AND manifest_json = ?)";

@@ -3,7 +3,7 @@ import { SafePathSchema,IdSchema } from '../shared/schemas/common';
 import { readBoundedZip } from '../worker/imports/evidenceImporter';
 import { sha256,type FilesEnvironment } from '../worker/storage/filesRepository';
 export interface ReleaseEnv extends FilesEnvironment { RELEASE_PUBLISH_SECRET?: string; }
-const securityHeaders = { 'Content-Security-Policy': "default-src 'none'; img-src 'self' data:; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'",'X-Content-Type-Options': 'nosniff','Referrer-Policy': 'no-referrer' };
+const securityHeaders = { 'Content-Security-Policy': "default-src 'none'; img-src 'self' data:; style-src 'self'; font-src 'self' data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'",'X-Content-Type-Options': 'nosniff','Referrer-Policy': 'no-referrer' };
 export default { async fetch(request: Request,env: ReleaseEnv): Promise<Response> {
   const url = new URL(request.url);
   if (url.pathname === '/internal/publish') {
@@ -42,5 +42,6 @@ export default { async fetch(request: Request,env: ReleaseEnv): Promise<Response
   const { digest,manifest } = JSON.parse(new TextDecoder().decode(await marker.arrayBuffer()));
   const entry = ReleaseTransferSchema.parse(manifest).files.find(file => file.path === filePath); if (!entry) return new Response('Not found',{ status: 404 });
   const object = await env.FILES.get(`releases/${match[1]}/${digest}/${filePath}`); if (!object) return new Response('Not found',{ status: 404 });
-  return new Response(request.method === 'HEAD' ? null : await object.arrayBuffer(),{ headers: { ...securityHeaders,'Content-Type': entry.mediaType,'Cache-Control': 'public, max-age=31536000, immutable',ETag: `"${entry.sha256}"` } });
+  const download = url.searchParams.get('artifact') === '1';
+  return new Response(request.method === 'HEAD' ? null : await object.arrayBuffer(),{ headers: { ...securityHeaders,'Content-Type': download ? 'application/octet-stream' : entry.mediaType,...(download ? { 'Content-Disposition': 'attachment' } : {}),'Cache-Control': 'public, max-age=31536000, immutable, no-transform',ETag: `"${entry.sha256}"` } });
 } };

@@ -8,6 +8,7 @@ import { MemoryBucket } from '../fixtures/files/memoryBucket';
 import { securityEnv,authorHeaders } from '../fixtures/security/session-fixtures';
 import { context } from '../fixtures/runtime-env';
 import { readBoundedZip,validateEvidenceBundle } from '../../src/worker/imports/evidenceImporter';
+import { sha256 } from '../../src/worker/storage/filesRepository';
 let db: SqliteD1;
 const archive = Uint8Array.from(readFileSync(new URL('../../public/samples/spacejam-1996.zip',import.meta.url)));
 beforeEach(() => { db = new SqliteD1(readFileSync(new URL('../../migrations/0001_initial_workflow.sql',import.meta.url),'utf8')); db.sqlite.exec("INSERT INTO Projects (id,name) VALUES ('p','Space Jam')"); });
@@ -17,6 +18,10 @@ it('validates the three-page real capture with exact reference hashes', async ()
   expect(manifest.pages.map(page => page.title)).toEqual(['Home','The Lineup','Jam Central']);
   expect(manifest.pages.every(page => page.regions.length > 0)).toBe(true);
   expect(manifest.pages[1].links.some(link => link.origin === 'image_map')).toBe(true);
+  for (const ref of [...manifest.assets.map(asset => asset.file),...manifest.pages.flatMap(page => [page.html,page.screenshot])]) {
+    const bytes = readFileSync(new URL(`../../fixtures/spacejam-1996/${ref.objectKey}`,import.meta.url));
+    expect(await sha256(Uint8Array.from(bytes).buffer),ref.objectKey).toBe(ref.sha256);
+  }
 });
 it('imports through the Worker, persists state and blocks rebuild before explicit approval', async () => {
   const files = new MemoryBucket();
