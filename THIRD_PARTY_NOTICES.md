@@ -4,7 +4,7 @@ The MIT license in `LICENSE` covers original Reframe code and documentation. It 
 
 ## Space Jam reference study
 
-`fixtures/spacejam-raw/`, source-derived content in `fixtures/spacejam-1996/`, `public/samples/home.jpg`, and content inside `public/samples/spacejam-1996.zip` contain evidence captured from https://www.spacejam.com/1996/ on September 23, 2026.
+`fixtures/spacejam-raw/`, source-derived content in `fixtures/spacejam-1996/`, `public/samples/home.jpg`, and content inside `public/samples/spacejam-1996.zip` contain evidence captured from https://www.spacejam.com/1996/ on September 23, 2026. Screenshots in `docs/images/` also depict this reference material within the Reframe interface; the same exclusions apply to the third-party content visible in those images.
 
 Original text, HTML, images, artwork, and screenshots of that material remain the property of their respective rights holders. Preserve original copyright notices. This is an unofficial modernization reference study; no affiliation or endorsement is claimed. These materials are **excluded from Reframe's MIT grant**. This repository does not supply a license permitting reuse of original site content; obtain necessary permissions and use your own or appropriately licensed material for redistributed examples and public sites.
 

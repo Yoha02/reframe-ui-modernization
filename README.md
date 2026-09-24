@@ -4,6 +4,14 @@
 
 Reframe is an open-source UI modernization workbench. It keeps source evidence, AI recommendations, design decisions, and page approvals together so a redesign can be reviewed before publication.
 
+### Compare the original with the next version
+
+![Reframe's before-and-after slider showing the original Space Jam homepage on the left and a rebuilt static page on the right](docs/images/comparison-slider.jpg)
+
+**Drag the comparison slider in the app to reveal the transformation.** Review the source and rebuilt page together before approving it. This screenshot shows the slider at its midpoint.
+
+The visual tour uses the Space Jam reference study. Recommendation and redesign screens show **sample data from the local visual test fixture**, not a verified live AI result. Screenshots are static; click an image to inspect it at full size. [Capture details and content rights](docs/images/README.md).
+
 ## What it does
 
 1. **Import evidence:** load a prepared ZIP containing source HTML, screenshots, text, links, assets, and provenance.
@@ -14,6 +22,25 @@ Reframe is an open-source UI modernization workbench. It keeps source evidence, 
 6. **Publish static output:** freeze approved versions into an immutable release, serve it through a separate read-only service, and download the matching ZIP.
 
 Approval gates run on the server. Changing a design or page requires current approvals before publication. Imported legacy scripts are never executed by the renderer.
+
+## A visual tour
+
+| Start with evidence | Understand what needs to change |
+| --- | --- |
+| [![Source evidence workspace with captured pages, original screenshots, preserved images and links](docs/images/source-evidence.jpg)](docs/images/source-evidence.jpg) | [![Evaluation screen with findings linked back to captured source evidence](docs/images/evaluation.jpg)](docs/images/evaluation.jpg) |
+| **Source evidence.** Keep screenshots, original content, links, and capture provenance together. | **Evaluation.** Review findings about navigation, readability, and preservation alongside their source. |
+
+| Break the interface into components | Shape a site-specific design system |
+| --- | --- |
+| [![Visual component board with original screenshot crops and connections between reusable groups](docs/images/component-board.jpg)](docs/images/component-board.jpg) | [![Design-system editor showing editable background, surface, text, primary and accent colors](docs/images/design-system.jpg)](docs/images/design-system.jpg) |
+| **Component board.** Explore source regions, reusable groups, and editable component descriptions on a draggable canvas. | **Design direction.** Review and adjust the proposed palette before approving a design-system version. |
+
+| Preview the design before rebuilding | Review each page on smaller screens |
+| --- | --- |
+| [![Typography and corner-radius controls alongside a live component and spacing preview](docs/images/design-preview.jpg)](docs/images/design-preview.jpg) | [![Rebuilt page displayed in Reframe's 390-pixel mobile preview](docs/images/mobile-preview.jpg)](docs/images/mobile-preview.jpg) |
+| **Live design previews.** See typography, corner radius, spacing, and component styling together. | **Mobile review.** Inspect the rebuilt page at 390px as well as desktop size before page approval. |
+
+After design and page approvals, Reframe packages the reviewed pages into a static release and matching ZIP. See [publication setup](#try-publication-locally) to run that step yourself.
 
 ## Use cases
 
