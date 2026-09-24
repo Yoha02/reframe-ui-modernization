@@ -8,3 +8,7 @@ dist/
 .forge-commit-ready
 coverage/
 *.local
+.forge/
+.openai/hosting.json
+*.pem
+*.key

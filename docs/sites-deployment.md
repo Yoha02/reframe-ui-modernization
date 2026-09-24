@@ -1,19 +1,39 @@
-# Sites deployment and verification
+# Deploy your own Reframe instance
 
-Workbench: https://reframe-ui-modernization.y03.chatgpt.site
-Project: appgprj_6ab43da23b848191b2ca40546300da23
+The hosted implementation targets Sites with a TypeScript Worker, D1, R2, and the Sites authenticated identity gateway. This repository is not a provider-independent one-click deployment template.
 
-Read-only release origin: https://reframe-static-releases.y03.chatgpt.site
-Project: appgprj_6ab457b15c848191a4af68374e1e2928
+Create two projects in your own Sites account: an authoring workbench and a public static release service. Use your own project identifiers; the owner's local `.openai/hosting.json` is intentionally ignored. Provision each project through your account's Sites tooling, which supplies its manifest and deployment workflow.
 
-The user explicitly changed the workbench audience to public. Its landing page is public; authoring requires ChatGPT sign-in and the configured AUTHOR_EMAILS allowlist (both requested accounts). The public release Worker has no authoring routes or model credentials. Its private ingestion endpoint requires a server-held shared secret.
+## Authoring workbench
 
-The first remote build established the required Worker entrypoint: dist/server/index.js. Build the workbench with npm run build, then create a tar containing .openai/hosting.json, dist/server/index.js and dist/client/. Push the exact committed source to the Sites-provided Git remote, then save and deploy that SHA with the archive. Deployment archives must exclude node_modules, source files, local visual fixtures and credentials. The release service uses the same dist/server/index.js layout and needs only FILES storage. Its source is maintained in src/release-worker/index.ts; the deployment copy uses a separate Sites project and repository.
+1. Bind D1 as `DB`, R2 as `FILES`, and frontend assets as `ASSETS`. The Worker initializes its schema from `migrations/0001_initial_workflow.sql` when needed.
+2. Configure server settings below through the host's environment/secret controls.
+3. Run `npm ci` and `npm run build`.
+4. Package `.openai/hosting.json`, `dist/server/index.js`, and `dist/client/`. Use Sites tooling to upload the exact committed source and archive, then deploy that version.
+5. Redeploy after changing runtime settings if required by the host. Verify anonymous landing, authenticated import, and persistence after reload.
 
-Sites settings provide SESSION_SIGNING_SECRET, AUTHOR_EMAILS, RELEASE_ORIGIN and RELEASE_PUBLISH_SECRET. The release Site receives only RELEASE_PUBLISH_SECRET and FILES. OpenAI credentials and the approved spending cap remain pending. Values are never stored in hosting.json or application code. Redeploy after changing runtime settings.
+| Setting | Purpose |
+| --- | --- |
+| `SESSION_SIGNING_SECRET` | Random secret of at least 32 characters for signed sessions |
+| `AUTHOR_EMAILS` | Comma-separated allowlist for authenticated authors |
+| `OPENAI_API_KEY` | Your server-only API credential |
+| `OPENAI_MODEL` | `gpt-4.1-mini-2025-04-14` or `gpt-4.1-mini` |
+| `OPENAI_BUDGET_USD` | Positive request-reservation limit; not a guaranteed provider billing cap |
+| `RELEASE_ORIGIN` | HTTPS origin of your release service |
+| `RELEASE_PUBLISH_SECRET` | Random shared secret of at least 32 characters, also set on the release service |
 
-Verified on 2026-09-23: workbench production deployment succeeded; public landing GET returned 200; anonymous and spoofed-header project GET/POST returned 401. asggm03 signed in through ChatGPT, imported all three real pages (17 image assets, 24 links), and the project survived reload. Release origin GET returned 200; /api/projects returned 404; unauthenticated /internal/publish POST returned 401. Real model-generated public pages remain unverified until OpenAI configuration is supplied.
+Never set `LOCAL_DEVELOPMENT=true` on a hosted project. Production identity comes from `oai-authenticated-user-email`, supplied by the trusted Sites gateway. Do not expose the raw Worker on a host that permits clients to supply that header. Add verified authentication before using another host. All allowed authors share project access.
 
-Local visual QA uses tests/fixtures/visual-worker.ts and scripts/visual-preview.ts on 127.0.0.1:8789. It is explicitly labelled test data and is not part of the deployed archive. Automated integration tests use in-memory D1/R2 adapters and mocked Responses API output; they validate approvals, preservation, publish hashes, ZIP parity and immutable release rejection.
+## Public release service
 
-Hosting boundary discovered during the real R2 smoke test: Cloudflare appends challenge-platform security markup to HTML transport responses. The release service therefore exposes the same immutable file with ?artifact=1 as application/octet-stream; publishing checks normal public HTML availability and hashes these canonical download bytes. The ZIP matches canonical generated artifacts. We do not claim that the edge-modified HTML transport body is byte-for-byte identical to the ZIP.
+Build with `npm run build:releases`. Package `dist/releases/index.js` as **`dist/server/index.js`** in the separate project's archive alongside its own `.openai/hosting.json`. Bind a separate R2 bucket as `FILES`; supply only `RELEASE_PUBLISH_SECRET`. This service needs no OpenAI key, author sessions, or D1 database.
+
+Make the service publicly readable. `/internal/publish` requires the shared secret and receives an immutable ZIP. Pages live under `/sites/<release-id>/`. Verify anonymous reads, rejected unauthenticated publishing, and absence of authoring routes before use.
+
+Some hosts append security markup to HTML responses. Reframe checks public HTML availability and separately hashes canonical bytes returned with `?artifact=1`. ZIP parity refers to canonical files, not HTML modified by an edge service in transit.
+
+## Packaging and validation
+
+Exclude `.env`, `.dev.vars`, credentials, local databases, `node_modules`, test fixtures, and visual-preview workers from archives. The frontend build is `dist/client`; test-only visual fixtures must never become the deployed backend.
+
+Run repository checks before deployment. Integration tests mock the model. A build or hosting smoke test does not demonstrate a real model-generated release; verify that journey separately with your own account and permitted content.
