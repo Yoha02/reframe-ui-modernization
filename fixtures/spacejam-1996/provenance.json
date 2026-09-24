@@ -1,0 +1,32 @@
+{
+  "capturedAt": "2026-09-23T20:50:21.1092858Z",
+  "method": "prepared_browser_capture",
+  "tool": "Codex browser capture + offline manifest preparation",
+  "sourceUrls": [
+    "https://www.spacejam.com/1996/",
+    "https://www.spacejam.com/1996/cmp/lineup/lineup.html",
+    "https://www.spacejam.com/1996/cmp/jamcentral/jamcentral.html"
+  ],
+  "captureViewport": [
+    {
+      "width": 1280,
+      "height": 720,
+      "screenshotWidth": 1265,
+      "screenshotHeight": 712
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "screenshotWidth": 1280,
+      "screenshotHeight": 720
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "screenshotWidth": 1280,
+      "screenshotHeight": 720
+    }
+  ],
+  "hashAlgorithm": "SHA-256",
+  "generatedByLocalScript": true
+}

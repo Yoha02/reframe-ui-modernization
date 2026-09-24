@@ -1,0 +1,23 @@
+import { useEffect,useMemo,useState } from 'react';
+import { ReactFlow,Background,Controls,Handle,Position,useNodesState,type NodeProps,type Node } from '@xyflow/react';
+import '@xyflow/react/dist/style.css';
+import type { Component } from '../../shared/schemas/modelResponses';
+import type { EvidenceManifest } from '../../shared/schemas/evidenceManifest';
+import { api,connectSession,objectUrl } from '../api/client';
+import type { CanvasLayout } from '../../shared/schemas/canvasLayout';
+type ComponentNode = Node<{ component: Component; page: EvidenceManifest['pages'][number]; projectId: string }>;
+function SourceCard({ data,selected }: NodeProps<ComponentNode>) {
+  const { component,page,projectId } = data,crop = page.regions.find(region => region.id === component.regionId)!;
+  const scale = Math.min(228 / crop.width,135 / crop.height);
+  return <div className={`source-node ${selected ? 'selected' : ''}`}><Handle type="target" position={Position.Left} /><div className="node-image"><div style={{ width: crop.width * scale,height: crop.height * scale,backgroundImage: `url("${objectUrl(projectId,page.screenshot.objectKey)}")`,backgroundSize: `${page.viewport.width * scale}px ${page.viewport.height * scale}px`,backgroundPosition: `${-crop.x * scale}px ${-crop.y * scale}px` }} /></div><div className="node-content"><span className="eyebrow">{component.semanticRole}</span><h3>{component.label}</h3><div className="node-meta"><span>{page.title}</span><span className="pill">{component.recommendation}</span></div></div><Handle type="source" position={Position.Right} /></div>;
+}
+const nodeTypes = { source: SourceCard };
+export function ComponentCanvas({ components,manifest,projectId,onSelect }: { components: Component[]; manifest: EvidenceManifest; projectId: string; onSelect: (component: Component) => void }) {
+  const [layout,setLayout] = useState<CanvasLayout>({ rowVersion: 0,nodes: [],viewport: null }),[message,setMessage] = useState(''),[loaded,setLoaded] = useState(false);
+  const initial = useMemo(() => components.map((component,index) => ({ id: component.stableId,type: 'source',position: { x: (index % 3) * 310,y: Math.floor(index / 3) * 270 },data: { component,page: manifest.pages.find(page => page.id === component.sourcePageId)!,projectId } })),[components,manifest,projectId]);
+  const [nodes,setNodes,onNodesChange] = useNodesState(initial);
+  useEffect(() => { let active = true; api<CanvasLayout>(`/api/projects/${projectId}/canvas-layout`).then(saved => { if (!active) return; setLayout(saved); setNodes(initial.map(node => { const position = saved.nodes.find(item => item.id === node.id); return position ? { ...node,position: { x: position.x,y: position.y } } : node; })); setLoaded(true); }).catch(() => { if (active) setMessage('The saved board could not load.'); }); return () => { active = false; }; },[projectId,initial,setNodes]);
+  async function save() { setMessage('Saving board…'); try { await connectSession(); const saved = await api<CanvasLayout>(`/api/projects/${projectId}/canvas-layout`,'PUT',{ ...layout,nodes: nodes.map(node => ({ id: node.id,...node.position })) }); setLayout(saved); setMessage('Board saved'); } catch (error) { setMessage(error instanceof Error ? error.message : 'Board could not save'); } }
+  const edges = components.flatMap((component,index) => { const previous = components.slice(0,index).find(item => item.reusableGroupId === component.reusableGroupId); return previous ? [{ id: `${previous.stableId}-${component.stableId}`,source: previous.stableId,target: component.stableId,style: { stroke: '#bcb3e8',strokeWidth: 1.5 },type: 'smoothstep' }] : []; });
+  return <><div className="canvas-tools"><span role="status">{message || 'Arrange your board. Save it to return to the same view.'}</span><button className="secondary" disabled={!loaded} onClick={save}>Save board</button></div><div className="component-canvas">{loaded && <ReactFlow nodes={nodes} edges={edges} nodeTypes={nodeTypes} onNodesChange={onNodesChange} onNodeClick={(_,node) => onSelect(node.data.component)} defaultViewport={layout.viewport ?? undefined} onMoveEnd={(_,viewport) => setLayout(value => ({ ...value,viewport }))} fitView={!layout.viewport} minZoom={0.25} maxZoom={1.8} nodesConnectable={false}><Background color="#d9d6e1" gap={20} /><Controls showInteractive={false} /></ReactFlow>}</div><details className="component-list"><summary>View components as a list</summary>{components.map(component => <button className="secondary" key={component.stableId} onClick={() => onSelect(component)}>{component.label} · {component.semanticRole}</button>)}</details></>;
+}

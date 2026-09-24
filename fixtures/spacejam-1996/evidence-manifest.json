@@ -1,0 +1,1131 @@
+{
+  "schemaVersion": 1,
+  "title": "Space Jam 1996",
+  "sourceUrl": "https://www.spacejam.com/1996/",
+  "provenance": {
+    "capturedAt": "2026-09-23T20:50:21.1092858Z",
+    "method": "prepared_browser_capture",
+    "tool": "Codex browser capture + offline manifest preparation"
+  },
+  "assets": [
+    {
+      "id": "asset-0",
+      "sourceUrl": "https://www.spacejam.com/1996/img/p-pressbox.gif",
+      "originalPath": "p-pressbox.gif",
+      "file": {
+        "objectKey": "assets/asset-0.gif",
+        "sha256": "b56b4c6efd707366588a94532483632355f3d2b42df7c3fa6d6a55038ccbcdfb",
+        "mediaType": "image/gif",
+        "byteSize": 4422,
+        "immutable": true
+      },
+      "alt": "Press Box Shuttle"
+    },
+    {
+      "id": "asset-1",
+      "sourceUrl": "https://www.spacejam.com/1996/img/p-jamcentral.gif",
+      "originalPath": "p-jamcentral.gif",
+      "file": {
+        "objectKey": "assets/asset-1.gif",
+        "sha256": "e778d2bf60228b8d0a0155a597b9285a166db7a3225d208c96a6a546cad7a467",
+        "mediaType": "image/gif",
+        "byteSize": 1908,
+        "immutable": true
+      },
+      "alt": "Jam Central"
+    },
+    {
+      "id": "asset-2",
+      "sourceUrl": "https://www.spacejam.com/1996/img/p-jamlogo.gif",
+      "originalPath": "p-jamlogo.gif",
+      "file": {
+        "objectKey": "assets/asset-2.gif",
+        "sha256": "98ab200a46caa418609f9636bfde9b1afce49ae84a08dafb166130207547f74d",
+        "mediaType": "image/gif",
+        "byteSize": 15410,
+        "immutable": true
+      },
+      "alt": "Space Jam"
+    },
+    {
+      "id": "asset-3",
+      "sourceUrl": "https://www.spacejam.com/1996/img/p-bball.gif",
+      "originalPath": "p-bball.gif",
+      "file": {
+        "objectKey": "assets/asset-3.gif",
+        "sha256": "5ca2abba75b0aa365c44f5d9cbe51dda1639453821a9ce856ce680e0f61e0559",
+        "mediaType": "image/gif",
+        "byteSize": 1368,
+        "immutable": true
+      },
+      "alt": "Planet B-Ball"
+    },
+    {
+      "id": "asset-4",
+      "sourceUrl": "https://www.spacejam.com/1996/img/p-lunartunes.gif",
+      "originalPath": "p-lunartunes.gif",
+      "file": {
+        "objectKey": "assets/asset-4.gif",
+        "sha256": "e2d620beefcef5be24d8b730cf30a266f85ccefd0c4984674763aec0da3caba0",
+        "mediaType": "image/gif",
+        "byteSize": 3538,
+        "immutable": true
+      },
+      "alt": "Lunar Tunes"
+    },
+    {
+      "id": "asset-5",
+      "sourceUrl": "https://www.spacejam.com/1996/img/p-lineup.gif",
+      "originalPath": "p-lineup.gif",
+      "file": {
+        "objectKey": "assets/asset-5.gif",
+        "sha256": "e90cdcc57340e9c4208274eb002ade03e30830cd3a6dc7c2aac6749f1f750203",
+        "mediaType": "image/gif",
+        "byteSize": 1929,
+        "immutable": true
+      },
+      "alt": "The Lineup"
+    },
+    {
+      "id": "asset-6",
+      "sourceUrl": "https://www.spacejam.com/1996/img/p-jump.gif",
+      "originalPath": "p-jump.gif",
+      "file": {
+        "objectKey": "assets/asset-6.gif",
+        "sha256": "93e3f7e5e10ee0f114764c91d82463e43518bccea84ecb12b72b6fa987fd9be2",
+        "mediaType": "image/gif",
+        "byteSize": 2593,
+        "immutable": true
+      },
+      "alt": "Jump Station"
+    },
+    {
+      "id": "asset-7",
+      "sourceUrl": "https://www.spacejam.com/1996/img/p-junior.gif",
+      "originalPath": "p-junior.gif",
+      "file": {
+        "objectKey": "assets/asset-7.gif",
+        "sha256": "b9410f292c380afb228275c8c1df53f91f3c27cad91a6ae492407117ba57cf66",
+        "mediaType": "image/gif",
+        "byteSize": 1253,
+        "immutable": true
+      },
+      "alt": "Junior Jam"
+    },
+    {
+      "id": "asset-8",
+      "sourceUrl": "https://www.spacejam.com/1996/img/p-studiostore.gif",
+      "originalPath": "p-studiostore.gif",
+      "file": {
+        "objectKey": "assets/asset-8.gif",
+        "sha256": "74c259553b42b62cff8372e3369b36e7ec63f9266e4345babeb9ccfdb4427cef",
+        "mediaType": "image/gif",
+        "byteSize": 2745,
+        "immutable": true
+      },
+      "alt": "Warner Studio Store"
+    },
+    {
+      "id": "asset-9",
+      "sourceUrl": "https://www.spacejam.com/1996/img/p-souvenirs.gif",
+      "originalPath": "p-souvenirs.gif",
+      "file": {
+        "objectKey": "assets/asset-9.gif",
+        "sha256": "c44cde024b8b7f92d3156226b907628f8a05331de94ae6bccd2d52bbe5d30e36",
+        "mediaType": "image/gif",
+        "byteSize": 3594,
+        "immutable": true
+      },
+      "alt": "Stellar Souvenirs"
+    },
+    {
+      "id": "asset-10",
+      "sourceUrl": "https://www.spacejam.com/1996/img/p-sitemap.gif",
+      "originalPath": "p-sitemap.gif",
+      "file": {
+        "objectKey": "assets/asset-10.gif",
+        "sha256": "8bd53dd782ba815a03a11a514b04f32b4dc4c1292ac3bd09dabb0f58a76d8061",
+        "mediaType": "image/gif",
+        "byteSize": 3401,
+        "immutable": true
+      },
+      "alt": "Site Map"
+    },
+    {
+      "id": "asset-11",
+      "sourceUrl": "https://www.spacejam.com/1996/img/p-behind.gif",
+      "originalPath": "p-behind.gif",
+      "file": {
+        "objectKey": "assets/asset-11.gif",
+        "sha256": "0e5eb15f67ef1b24f21d737c5d7e213fea4bbec8dccf2759eb7f0cc64a738999",
+        "mediaType": "image/gif",
+        "byteSize": 1902,
+        "immutable": true
+      },
+      "alt": "Behind the Jam"
+    },
+    {
+      "id": "asset-12",
+      "sourceUrl": "https://www.spacejam.com/1996/img/bg_stars.gif",
+      "originalPath": "bg_stars.gif",
+      "file": {
+        "objectKey": "assets/asset-12.gif",
+        "sha256": "9348685868d63a82d178f059a0f52aadd4e26d087a8df9753b0a53f599a3a39e",
+        "mediaType": "image/gif",
+        "byteSize": 8452,
+        "immutable": true
+      },
+      "alt": "bg_stars.gif"
+    },
+    {
+      "id": "asset-13",
+      "sourceUrl": "https://www.spacejam.com/1996/cmp/lineup/img/m-lineup.jpg",
+      "originalPath": "m-lineup.jpg",
+      "file": {
+        "objectKey": "assets/asset-13.jpg",
+        "sha256": "ffd3cacb8d9398b1ca375052d0da63b5b8ea265872d062d8dd93f8e4d8568255",
+        "mediaType": "image/jpeg",
+        "byteSize": 27353,
+        "immutable": true
+      },
+      "alt": "navigation map"
+    },
+    {
+      "id": "asset-14",
+      "sourceUrl": "https://www.spacejam.com/1996/cmp/lineup/img/n-games.gif",
+      "originalPath": "n-games.gif",
+      "file": {
+        "objectKey": "assets/asset-14.gif",
+        "sha256": "870b1c1754c350dd219696fd1b06122c78ad5ad28b29b3f7d68db7831a16189b",
+        "mediaType": "image/gif",
+        "byteSize": 11718,
+        "immutable": true
+      },
+      "alt": "Games"
+    },
+    {
+      "id": "asset-15",
+      "sourceUrl": "https://www.spacejam.com/1996/img/bg_stars.jpg",
+      "originalPath": "bg_stars.jpg",
+      "file": {
+        "objectKey": "assets/asset-15.jpg",
+        "sha256": "499627c4e6776dc3808401d07ba51e8ec45a632bf5400991457860e6cf93842d",
+        "mediaType": "image/jpeg",
+        "byteSize": 2045,
+        "immutable": true
+      },
+      "alt": "bg_stars.jpg"
+    },
+    {
+      "id": "asset-16",
+      "sourceUrl": "https://www.spacejam.com/1996/cmp/jamcentral/img/m-central.jpg",
+      "originalPath": "m-central.jpg",
+      "file": {
+        "objectKey": "assets/asset-16.jpg",
+        "sha256": "eeac9ebaeeb2e3fbcba533ec0fbd4245a47e613216f54d04112cf4e5f0400099",
+        "mediaType": "image/jpeg",
+        "byteSize": 27788,
+        "immutable": true
+      },
+      "alt": "navigation map"
+    }
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "title": "Home",
+      "route": "/",
+      "sourceUrl": "https://www.spacejam.com/1996/",
+      "html": {
+        "objectKey": "pages/home/source.html",
+        "sha256": "394e8cd99deeb934480f86abb0fbc36a58a5344873777f1affe9c27334b80a13",
+        "mediaType": "text/html",
+        "byteSize": 6846,
+        "immutable": true
+      },
+      "screenshot": {
+        "objectKey": "screenshots/home.jpg",
+        "sha256": "21116722a8e1209c93d8e3709ff5dd2e3a4f09018aaa7237d0e65777cf050950",
+        "mediaType": "image/jpeg",
+        "byteSize": 141504,
+        "immutable": true
+      },
+      "text": "Privacy Policy Terms Accessibility AdChoices SPACE JAM, characters, names, and all related indicia are trademarks of Warner Bros. © 1996",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "screenshotWidth": 1265,
+        "screenshotHeight": 712
+      },
+      "content": [
+        {
+          "id": "home-source-0",
+          "kind": "link",
+          "text": "Press Box Shuttle",
+          "href": "https://www.spacejam.com/1996/cmp/pressbox/pressboxframes.html"
+        },
+        {
+          "id": "home-source-1",
+          "kind": "image",
+          "text": "Press Box Shuttle",
+          "assetId": "asset-0"
+        },
+        {
+          "id": "home-source-2",
+          "kind": "link",
+          "text": "Jam Central",
+          "href": "https://www.spacejam.com/1996/cmp/jamcentral/jamcentralframes.html"
+        },
+        {
+          "id": "home-source-3",
+          "kind": "image",
+          "text": "Jam Central",
+          "assetId": "asset-1"
+        },
+        {
+          "id": "home-source-4",
+          "kind": "link",
+          "text": "Planet B-Ball",
+          "href": "https://www.spacejam.com/1996/cmp/bball/bballframes.html"
+        },
+        {
+          "id": "home-source-5",
+          "kind": "image",
+          "text": "Planet B-Ball",
+          "assetId": "asset-3"
+        },
+        {
+          "id": "home-source-6",
+          "kind": "link",
+          "text": "Lunar Tunes",
+          "href": "https://www.spacejam.com/1996/cmp/tunes/tunesframes.html"
+        },
+        {
+          "id": "home-source-7",
+          "kind": "image",
+          "text": "Lunar Tunes",
+          "assetId": "asset-4"
+        },
+        {
+          "id": "home-source-8",
+          "kind": "link",
+          "text": "The Lineup",
+          "href": "https://www.spacejam.com/1996/cmp/lineup/lineupframes.html"
+        },
+        {
+          "id": "home-source-9",
+          "kind": "image",
+          "text": "The Lineup",
+          "assetId": "asset-5"
+        },
+        {
+          "id": "home-source-10",
+          "kind": "image",
+          "text": "Space Jam",
+          "assetId": "asset-2"
+        },
+        {
+          "id": "home-source-11",
+          "kind": "link",
+          "text": "Jump Station",
+          "href": "https://www.spacejam.com/1996/cmp/jump/jumpframes.html"
+        },
+        {
+          "id": "home-source-12",
+          "kind": "image",
+          "text": "Jump Station",
+          "assetId": "asset-6"
+        },
+        {
+          "id": "home-source-13",
+          "kind": "link",
+          "text": "Junior Jam",
+          "href": "https://www.spacejam.com/1996/cmp/junior/juniorframes.html"
+        },
+        {
+          "id": "home-source-14",
+          "kind": "image",
+          "text": "Junior Jam",
+          "assetId": "asset-7"
+        },
+        {
+          "id": "home-source-15",
+          "kind": "link",
+          "text": "Warner Studio Store",
+          "href": "https://shop.looneytunes.com/spacejam96?utm_source=SpaceJam1996&utm_medium=Website&utm_campaign=Theatrical2021"
+        },
+        {
+          "id": "home-source-16",
+          "kind": "image",
+          "text": "Warner Studio Store",
+          "assetId": "asset-8"
+        },
+        {
+          "id": "home-source-17",
+          "kind": "link",
+          "text": "Stellar Souvenirs",
+          "href": "https://www.spacejam.com/1996/cmp/souvenirs/souvenirsframes.html"
+        },
+        {
+          "id": "home-source-18",
+          "kind": "image",
+          "text": "Stellar Souvenirs",
+          "assetId": "asset-9"
+        },
+        {
+          "id": "home-source-19",
+          "kind": "link",
+          "text": "Site Map",
+          "href": "https://www.spacejam.com/1996/cmp/sitemap.html"
+        },
+        {
+          "id": "home-source-20",
+          "kind": "image",
+          "text": "Site Map",
+          "assetId": "asset-10"
+        },
+        {
+          "id": "home-source-21",
+          "kind": "link",
+          "text": "Behind the Jam",
+          "href": "https://www.spacejam.com/1996/cmp/behind/behindframes.html"
+        },
+        {
+          "id": "home-source-22",
+          "kind": "image",
+          "text": "Behind the Jam",
+          "assetId": "asset-11"
+        },
+        {
+          "id": "home-source-23",
+          "kind": "link",
+          "text": "Privacy Policy",
+          "href": "https://policies.warnerbros.com/privacy/"
+        },
+        {
+          "id": "home-source-24",
+          "kind": "link",
+          "text": "Terms",
+          "href": "http://policies.warnerbros.com/terms/en-us/"
+        },
+        {
+          "id": "home-source-25",
+          "kind": "link",
+          "text": "Accessibility",
+          "href": "http://policies.warnerbros.com/terms/en-us/#accessibility"
+        },
+        {
+          "id": "home-source-26",
+          "kind": "link",
+          "text": "AdChoices",
+          "href": "https://policies.warnerbros.com/privacy/en-us/#adchoices"
+        },
+        {
+          "id": "home-body-text",
+          "kind": "copyright",
+          "text": "Privacy Policy Terms Accessibility AdChoices SPACE JAM, characters, names, and all related indicia are trademarks of Warner Bros. © 1996"
+        }
+      ],
+      "links": [
+        {
+          "id": "home-source-0",
+          "label": "Press Box Shuttle",
+          "href": "https://www.spacejam.com/1996/cmp/pressbox/pressboxframes.html",
+          "origin": "anchor"
+        },
+        {
+          "id": "home-source-2",
+          "label": "Jam Central",
+          "href": "https://www.spacejam.com/1996/cmp/jamcentral/jamcentralframes.html",
+          "origin": "anchor"
+        },
+        {
+          "id": "home-source-4",
+          "label": "Planet B-Ball",
+          "href": "https://www.spacejam.com/1996/cmp/bball/bballframes.html",
+          "origin": "anchor"
+        },
+        {
+          "id": "home-source-6",
+          "label": "Lunar Tunes",
+          "href": "https://www.spacejam.com/1996/cmp/tunes/tunesframes.html",
+          "origin": "anchor"
+        },
+        {
+          "id": "home-source-8",
+          "label": "The Lineup",
+          "href": "https://www.spacejam.com/1996/cmp/lineup/lineupframes.html",
+          "origin": "anchor"
+        },
+        {
+          "id": "home-source-11",
+          "label": "Jump Station",
+          "href": "https://www.spacejam.com/1996/cmp/jump/jumpframes.html",
+          "origin": "anchor"
+        },
+        {
+          "id": "home-source-13",
+          "label": "Junior Jam",
+          "href": "https://www.spacejam.com/1996/cmp/junior/juniorframes.html",
+          "origin": "anchor"
+        },
+        {
+          "id": "home-source-15",
+          "label": "Warner Studio Store",
+          "href": "https://shop.looneytunes.com/spacejam96?utm_source=SpaceJam1996&utm_medium=Website&utm_campaign=Theatrical2021",
+          "origin": "anchor"
+        },
+        {
+          "id": "home-source-17",
+          "label": "Stellar Souvenirs",
+          "href": "https://www.spacejam.com/1996/cmp/souvenirs/souvenirsframes.html",
+          "origin": "anchor"
+        },
+        {
+          "id": "home-source-19",
+          "label": "Site Map",
+          "href": "https://www.spacejam.com/1996/cmp/sitemap.html",
+          "origin": "anchor"
+        },
+        {
+          "id": "home-source-21",
+          "label": "Behind the Jam",
+          "href": "https://www.spacejam.com/1996/cmp/behind/behindframes.html",
+          "origin": "anchor"
+        },
+        {
+          "id": "home-source-23",
+          "label": "Privacy Policy",
+          "href": "https://policies.warnerbros.com/privacy/",
+          "origin": "anchor"
+        },
+        {
+          "id": "home-source-24",
+          "label": "Terms",
+          "href": "http://policies.warnerbros.com/terms/en-us/",
+          "origin": "anchor"
+        },
+        {
+          "id": "home-source-25",
+          "label": "Accessibility",
+          "href": "http://policies.warnerbros.com/terms/en-us/#accessibility",
+          "origin": "anchor"
+        },
+        {
+          "id": "home-source-26",
+          "label": "AdChoices",
+          "href": "https://policies.warnerbros.com/privacy/en-us/#adchoices",
+          "origin": "anchor"
+        }
+      ],
+      "regions": [
+        {
+          "id": "home-region-source-0",
+          "label": "Press Box Shuttle",
+          "role": "link",
+          "x": 427.4479370117187,
+          "y": 232.5,
+          "width": 131.00000000000006,
+          "height": 17.33333396911621,
+          "sourceIds": [
+            "home-source-0"
+          ]
+        },
+        {
+          "id": "home-region-source-1",
+          "label": "Press Box Shuttle",
+          "role": "image",
+          "x": 427.4479370117187,
+          "y": 190.5,
+          "width": 131.00000000000006,
+          "height": 56,
+          "sourceIds": [
+            "home-source-1"
+          ],
+          "assetId": "asset-0"
+        },
+        {
+          "id": "home-region-source-2",
+          "label": "Jam Central",
+          "role": "link",
+          "x": 596.1146240234375,
+          "y": 211,
+          "width": 55,
+          "height": 17.33333396911621,
+          "sourceIds": [
+            "home-source-2"
+          ]
+        },
+        {
+          "id": "home-region-source-3",
+          "label": "Jam Central",
+          "role": "image",
+          "x": 596.1146240234375,
+          "y": 158,
+          "width": 55,
+          "height": 67,
+          "sourceIds": [
+            "home-source-3"
+          ],
+          "assetId": "asset-1"
+        },
+        {
+          "id": "home-region-source-4",
+          "label": "Planet B-Ball",
+          "role": "link",
+          "x": 697.25,
+          "y": 183,
+          "width": 62,
+          "height": 17.33333396911621,
+          "sourceIds": [
+            "home-source-4"
+          ]
+        },
+        {
+          "id": "home-region-source-5",
+          "label": "Planet B-Ball",
+          "role": "image",
+          "x": 697.25,
+          "y": 135,
+          "width": 62,
+          "height": 62,
+          "sourceIds": [
+            "home-source-5"
+          ],
+          "assetId": "asset-3"
+        },
+        {
+          "id": "home-region-source-6",
+          "label": "Lunar Tunes",
+          "role": "link",
+          "x": 778.03125,
+          "y": 234,
+          "width": 95,
+          "height": 17.33333396911621,
+          "sourceIds": [
+            "home-source-6"
+          ]
+        },
+        {
+          "id": "home-region-source-7",
+          "label": "Lunar Tunes",
+          "role": "image",
+          "x": 778.03125,
+          "y": 171,
+          "width": 95,
+          "height": 77,
+          "sourceIds": [
+            "home-source-7"
+          ],
+          "assetId": "asset-4"
+        },
+        {
+          "id": "home-region-source-8",
+          "label": "The Lineup",
+          "role": "link",
+          "x": 389.5416870117187,
+          "y": 326,
+          "width": 63,
+          "height": 17.33333396911621,
+          "sourceIds": [
+            "home-source-8"
+          ]
+        },
+        {
+          "id": "home-region-source-9",
+          "label": "The Lineup",
+          "role": "image",
+          "x": 389.5416870117187,
+          "y": 288,
+          "width": 63,
+          "height": 52,
+          "sourceIds": [
+            "home-source-9"
+          ],
+          "assetId": "asset-5"
+        },
+        {
+          "id": "home-region-source-10",
+          "label": "Space Jam",
+          "role": "image",
+          "x": 495.7291870117187,
+          "y": 252,
+          "width": 272.00000000000006,
+          "height": 165,
+          "sourceIds": [
+            "home-source-10"
+          ],
+          "assetId": "asset-2"
+        },
+        {
+          "id": "home-region-source-11",
+          "label": "Jump Station",
+          "role": "link",
+          "x": 821.3333740234375,
+          "y": 326,
+          "width": 58,
+          "height": 17.33333396911621,
+          "sourceIds": [
+            "home-source-11"
+          ]
+        },
+        {
+          "id": "home-region-source-12",
+          "label": "Jump Station",
+          "role": "image",
+          "x": 821.3333740234375,
+          "y": 288,
+          "width": 58,
+          "height": 52,
+          "sourceIds": [
+            "home-source-12"
+          ],
+          "assetId": "asset-6"
+        },
+        {
+          "id": "home-region-source-13",
+          "label": "Junior Jam",
+          "role": "link",
+          "x": 396.5416870117187,
+          "y": 403,
+          "width": 49,
+          "height": 17.33333396911621,
+          "sourceIds": [
+            "home-source-13"
+          ]
+        },
+        {
+          "id": "home-region-source-14",
+          "label": "Junior Jam",
+          "role": "image",
+          "x": 396.5416870117187,
+          "y": 360,
+          "width": 49,
+          "height": 57,
+          "sourceIds": [
+            "home-source-14"
+          ],
+          "assetId": "asset-7"
+        },
+        {
+          "id": "home-region-source-15",
+          "label": "Warner Studio Store",
+          "role": "link",
+          "x": 778.53125,
+          "y": 438,
+          "width": 94,
+          "height": 17.33333396911621,
+          "sourceIds": [
+            "home-source-15"
+          ]
+        },
+        {
+          "id": "home-region-source-16",
+          "label": "Warner Studio Store",
+          "role": "image",
+          "x": 778.53125,
+          "y": 380,
+          "width": 94,
+          "height": 72,
+          "sourceIds": [
+            "home-source-16"
+          ],
+          "assetId": "asset-8"
+        },
+        {
+          "id": "home-region-source-17",
+          "label": "Stellar Souvenirs",
+          "role": "link",
+          "x": 468.09375,
+          "y": 490,
+          "width": 83,
+          "height": 17.33333396911621,
+          "sourceIds": [
+            "home-source-17"
+          ]
+        },
+        {
+          "id": "home-region-source-18",
+          "label": "Stellar Souvenirs",
+          "role": "image",
+          "x": 468.09375,
+          "y": 421,
+          "width": 83,
+          "height": 83,
+          "sourceIds": [
+            "home-source-18"
+          ],
+          "assetId": "asset-9"
+        },
+        {
+          "id": "home-region-source-19",
+          "label": "Site Map",
+          "role": "link",
+          "x": 571.6146240234375,
+          "y": 546,
+          "width": 104,
+          "height": 17.33333396911621,
+          "sourceIds": [
+            "home-source-19"
+          ]
+        },
+        {
+          "id": "home-region-source-20",
+          "label": "Site Map",
+          "role": "image",
+          "x": 571.6146240234375,
+          "y": 493,
+          "width": 104,
+          "height": 67,
+          "sourceIds": [
+            "home-source-20"
+          ],
+          "assetId": "asset-10"
+        },
+        {
+          "id": "home-region-source-21",
+          "label": "Behind the Jam",
+          "role": "link",
+          "x": 694.75,
+          "y": 508,
+          "width": 67,
+          "height": 17.33333396911621,
+          "sourceIds": [
+            "home-source-21"
+          ]
+        },
+        {
+          "id": "home-region-source-22",
+          "label": "Behind the Jam",
+          "role": "image",
+          "x": 694.75,
+          "y": 459,
+          "width": 67,
+          "height": 63,
+          "sourceIds": [
+            "home-source-22"
+          ],
+          "assetId": "asset-11"
+        },
+        {
+          "id": "home-region-source-23",
+          "label": "Privacy Policy",
+          "role": "link",
+          "x": 494.25,
+          "y": 685.6666870117188,
+          "width": 76.1875,
+          "height": 14,
+          "sourceIds": [
+            "home-source-23"
+          ]
+        },
+        {
+          "id": "home-region-source-24",
+          "label": "Terms",
+          "role": "link",
+          "x": 584.4375,
+          "y": 685.6666870117188,
+          "width": 32.3125,
+          "height": 14,
+          "sourceIds": [
+            "home-source-24"
+          ]
+        },
+        {
+          "id": "home-region-source-25",
+          "label": "Accessibility",
+          "role": "link",
+          "x": 630.75,
+          "y": 685.6666870117188,
+          "width": 67.88542175292969,
+          "height": 14,
+          "sourceIds": [
+            "home-source-25"
+          ]
+        },
+        {
+          "id": "home-region-source-26",
+          "label": "AdChoices",
+          "role": "link",
+          "x": 712.6354370117188,
+          "y": 685.6666870117188,
+          "width": 57.770835876464844,
+          "height": 14,
+          "sourceIds": [
+            "home-source-26"
+          ]
+        }
+      ],
+      "frames": [],
+      "warnings": [
+        "Legacy HTML is stored as inert evidence and is never executed.",
+        "Screenshot records a viewport, not the entire scrollable page."
+      ]
+    },
+    {
+      "id": "the-lineup",
+      "title": "The Lineup",
+      "route": "/the-lineup/",
+      "sourceUrl": "https://www.spacejam.com/1996/cmp/lineup/lineup.html",
+      "html": {
+        "objectKey": "pages/the-lineup/source.html",
+        "sha256": "107e737334eeaf9225859bf1d8c1d548d0f6575a2e7c094f327aa6c42247ddea",
+        "mediaType": "text/html",
+        "byteSize": 3265,
+        "immutable": true
+      },
+      "screenshot": {
+        "objectKey": "screenshots/the-lineup.jpg",
+        "sha256": "7ca6cd043064979ecc9f985d4803907ffcd1c6ac2d319733220ec8d71c665f93",
+        "mediaType": "image/jpeg",
+        "byteSize": 159143,
+        "immutable": true
+      },
+      "text": "The cast, the characters, the players, the 'Tunes! When did Michael Jordan get into acting? Who are the Monstars, and how could they possibly make the Tazmanian Devil faint? How long has Bugs been driving Daffy crazy? Read on, and test your knowledge with our Trivia Quiz by hitting the Games button. SPACE JAM, characters, names, and all related indicia are trademarks of Warner Bros. © 1996",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "screenshotWidth": 1280,
+        "screenshotHeight": 720
+      },
+      "content": [
+        {
+          "id": "the-lineup-source-0",
+          "kind": "image",
+          "text": "navigation map",
+          "assetId": "asset-13"
+        },
+        {
+          "id": "the-lineup-source-1",
+          "kind": "link",
+          "text": "castbiosframes",
+          "href": "https://www.spacejam.com/1996/cmp/lineup/castbiosframes.html"
+        },
+        {
+          "id": "the-lineup-source-2",
+          "kind": "link",
+          "text": "playerbiosframes",
+          "href": "https://www.spacejam.com/1996/cmp/lineup/playerbiosframes.html"
+        },
+        {
+          "id": "the-lineup-source-3",
+          "kind": "link",
+          "text": "looneybiosframes",
+          "href": "https://www.spacejam.com/1996/cmp/lineup/looneybiosframes.html"
+        },
+        {
+          "id": "the-lineup-source-4",
+          "kind": "link",
+          "text": "badguysframes",
+          "href": "https://www.spacejam.com/1996/cmp/lineup/badguysframes.html"
+        },
+        {
+          "id": "the-lineup-source-5",
+          "kind": "link",
+          "text": "Games",
+          "href": "https://www.spacejam.com/1996/cmp/lineup/quizframes.html"
+        },
+        {
+          "id": "the-lineup-source-6",
+          "kind": "image",
+          "text": "Games",
+          "assetId": "asset-14"
+        },
+        {
+          "id": "the-lineup-body-text",
+          "kind": "copyright",
+          "text": "The cast, the characters, the players, the 'Tunes! When did Michael Jordan get into acting? Who are the Monstars, and how could they possibly make the Tazmanian Devil faint? How long has Bugs been driving Daffy crazy? Read on, and test your knowledge with our Trivia Quiz by hitting the Games button. SPACE JAM, characters, names, and all related indicia are trademarks of Warner Bros. © 1996"
+        }
+      ],
+      "links": [
+        {
+          "id": "the-lineup-source-1",
+          "label": "castbiosframes",
+          "href": "https://www.spacejam.com/1996/cmp/lineup/castbiosframes.html",
+          "origin": "image_map"
+        },
+        {
+          "id": "the-lineup-source-2",
+          "label": "playerbiosframes",
+          "href": "https://www.spacejam.com/1996/cmp/lineup/playerbiosframes.html",
+          "origin": "image_map"
+        },
+        {
+          "id": "the-lineup-source-3",
+          "label": "looneybiosframes",
+          "href": "https://www.spacejam.com/1996/cmp/lineup/looneybiosframes.html",
+          "origin": "image_map"
+        },
+        {
+          "id": "the-lineup-source-4",
+          "label": "badguysframes",
+          "href": "https://www.spacejam.com/1996/cmp/lineup/badguysframes.html",
+          "origin": "image_map"
+        },
+        {
+          "id": "the-lineup-source-5",
+          "label": "Games",
+          "href": "https://www.spacejam.com/1996/cmp/lineup/quizframes.html",
+          "origin": "anchor"
+        }
+      ],
+      "regions": [
+        {
+          "id": "the-lineup-region-source-0",
+          "label": "navigation map",
+          "role": "image",
+          "x": 419,
+          "y": 60,
+          "width": 442,
+          "height": 323,
+          "sourceIds": [
+            "the-lineup-source-0"
+          ],
+          "assetId": "asset-13"
+        },
+        {
+          "id": "the-lineup-region-source-6",
+          "label": "Games",
+          "role": "image",
+          "x": 1172,
+          "y": 419,
+          "width": 60,
+          "height": 60,
+          "sourceIds": [
+            "the-lineup-source-6"
+          ],
+          "assetId": "asset-14"
+        }
+      ],
+      "frames": [
+        {
+          "sourceUrl": "https://www.spacejam.com/1996/cmp/lineup/lineup.html",
+          "parentUrl": "https://www.spacejam.com/1996/cmp/lineup/lineupframes.html",
+          "contentPageId": "the-lineup",
+          "depth": 1
+        }
+      ],
+      "warnings": [
+        "Legacy HTML is stored as inert evidence and is never executed.",
+        "Screenshot records a viewport, not the entire scrollable page."
+      ]
+    },
+    {
+      "id": "jam-central",
+      "title": "Jam Central",
+      "route": "/jam-central/",
+      "sourceUrl": "https://www.spacejam.com/1996/cmp/jamcentral/jamcentral.html",
+      "html": {
+        "objectKey": "pages/jam-central/source.html",
+        "sha256": "333daa9dec02e6d378a201cae820e5b94b173441ac89523b242e40a6d2331a4f",
+        "mediaType": "text/html",
+        "byteSize": 3085,
+        "immutable": true
+      },
+      "screenshot": {
+        "objectKey": "screenshots/jam-central.jpg",
+        "sha256": "32e74ed6f561da2b160cae507b8a817befd2723e810af994a035e0e17b7866b3",
+        "mediaType": "image/jpeg",
+        "byteSize": 155425,
+        "immutable": true
+      },
+      "text": "You've made it: Jam Central Station, the central depository for all things Space Jam. From the best seats in the house, you can peruse the production notes, find out about the filmmakers, check out the theatrical trailer, and look at a bunch of photos from the film. SPACE JAM, characters, names, and all related indicia are trademarks of Warner Bros. © 1996",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "screenshotWidth": 1280,
+        "screenshotHeight": 720
+      },
+      "content": [
+        {
+          "id": "jam-central-source-0",
+          "kind": "image",
+          "text": "navigation map",
+          "assetId": "asset-16"
+        },
+        {
+          "id": "jam-central-source-1",
+          "kind": "link",
+          "text": "prodnotesframes",
+          "href": "https://www.spacejam.com/1996/cmp/jamcentral/prodnotesframes.html"
+        },
+        {
+          "id": "jam-central-source-2",
+          "kind": "link",
+          "text": "photosframes",
+          "href": "https://www.spacejam.com/1996/cmp/jamcentral/photosframes.html"
+        },
+        {
+          "id": "jam-central-source-3",
+          "kind": "link",
+          "text": "filmmakersframes",
+          "href": "https://www.spacejam.com/1996/cmp/jamcentral/filmmakersframes.html"
+        },
+        {
+          "id": "jam-central-source-4",
+          "kind": "link",
+          "text": "trailerframes",
+          "href": "https://www.spacejam.com/1996/cmp/jamcentral/trailerframes.html"
+        },
+        {
+          "id": "jam-central-body-text",
+          "kind": "copyright",
+          "text": "You've made it: Jam Central Station, the central depository for all things Space Jam. From the best seats in the house, you can peruse the production notes, find out about the filmmakers, check out the theatrical trailer, and look at a bunch of photos from the film. SPACE JAM, characters, names, and all related indicia are trademarks of Warner Bros. © 1996"
+        }
+      ],
+      "links": [
+        {
+          "id": "jam-central-source-1",
+          "label": "prodnotesframes",
+          "href": "https://www.spacejam.com/1996/cmp/jamcentral/prodnotesframes.html",
+          "origin": "image_map"
+        },
+        {
+          "id": "jam-central-source-2",
+          "label": "photosframes",
+          "href": "https://www.spacejam.com/1996/cmp/jamcentral/photosframes.html",
+          "origin": "image_map"
+        },
+        {
+          "id": "jam-central-source-3",
+          "label": "filmmakersframes",
+          "href": "https://www.spacejam.com/1996/cmp/jamcentral/filmmakersframes.html",
+          "origin": "image_map"
+        },
+        {
+          "id": "jam-central-source-4",
+          "label": "trailerframes",
+          "href": "https://www.spacejam.com/1996/cmp/jamcentral/trailerframes.html",
+          "origin": "image_map"
+        }
+      ],
+      "regions": [
+        {
+          "id": "jam-central-region-source-0",
+          "label": "navigation map",
+          "role": "image",
+          "x": 421,
+          "y": 60,
+          "width": 438,
+          "height": 301,
+          "sourceIds": [
+            "jam-central-source-0"
+          ],
+          "assetId": "asset-16"
+        }
+      ],
+      "frames": [
+        {
+          "sourceUrl": "https://www.spacejam.com/1996/cmp/jamcentral/jamcentral.html",
+          "parentUrl": "https://www.spacejam.com/1996/cmp/jamcentral/jamcentralframes.html",
+          "contentPageId": "jam-central",
+          "depth": 1
+        }
+      ],
+      "warnings": [
+        "Legacy HTML is stored as inert evidence and is never executed.",
+        "Screenshot records a viewport, not the entire scrollable page."
+      ]
+    }
+  ]
+}
