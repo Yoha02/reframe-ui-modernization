@@ -4,13 +4,13 @@ These are browser captures of the implemented Reframe interface, using the bundl
 
 | File | Feature | Capture provenance |
 | --- | --- | --- |
-| `comparison-slider.png` | Desktop original/rebuilt comparison at the slider midpoint | Local visual fixture, September 24, 2026 |
-| `source-evidence.png` | Imported screenshots, images, links, and source provenance | Hosted workbench, September 23, 2026 |
-| `evaluation.png` | Evidence-linked recommendations | Local visual fixture, September 23, 2026 |
-| `component-board.png` | Screenshot crops and reusable component groups | Local visual fixture, September 23, 2026 |
-| `design-system.png` | Site-specific palette editor | Local visual fixture, September 23, 2026 |
-| `design-preview.png` | Typography, radius, spacing, and component previews | Local visual fixture, September 23, 2026 |
-| `mobile-preview.png` | Rebuilt page in the 390px mobile preview | Local visual fixture, September 24, 2026 |
+| `comparison-slider.jpg` | Desktop original/rebuilt comparison at the slider midpoint | Local visual fixture, September 24, 2026 |
+| `source-evidence.jpg` | Imported screenshots, images, links, and source provenance | Hosted workbench, September 23, 2026 |
+| `evaluation.jpg` | Evidence-linked recommendations | Local visual fixture, September 23, 2026 |
+| `component-board.jpg` | Screenshot crops and reusable component groups | Local visual fixture, September 23, 2026 |
+| `design-system.jpg` | Site-specific palette editor | Local visual fixture, September 23, 2026 |
+| `design-preview.jpg` | Typography, radius, spacing, and component previews | Local visual fixture, September 23, 2026 |
+| `mobile-preview.jpg` | Rebuilt page in the 390px mobile preview | Local visual fixture, September 24, 2026 |
 
 The local fixture uses `tests/fixtures/visual-worker.ts` and `scripts/visual-preview.ts`; it replaces model responses with clearly labeled test data. Recommendation text, the sample design system, and rebuilt layouts in these captures do not establish a successful live model run. No paid model calls were made for this screenshot update. Source content, screenshots, and assets come from the real captured reference site.
 
